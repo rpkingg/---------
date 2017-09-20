@@ -1,0 +1,120 @@
+html,body{
+	background-color: #efefef;
+}
+.break-line-bar{
+	background-color: #efefef;
+	padding: 0.4rem 0;
+}
+.collect-notes-container img,
+.collect-notes-content video{
+	width: 100%;
+	height: auto;
+}
+.collect-list-nav-bar{
+	position: fixed;
+    left:0;
+    top: 0;
+    z-index: 1030;
+}
+.collect-nav-bar{
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+    align-items: flex-end; 
+}
+.collect-nav-bar span{
+	color: #999;
+    font-size: 1.4rem;
+    margin: 0 2%;
+    padding: 1.2rem 0;
+    width: 26%;
+}
+.collect-nav-bar .active{
+	color: #4395f7;
+	border-bottom: 0.1rem solid #4395f7;
+}
+.collect-notes-content{
+	margin-top: 5.3rem;
+	/*background-color: #fff;*/
+	padding: 1rem 2%;
+}
+.note-item{
+	border:0.1rem solid #ddd;
+	margin:0 3.2% 1.2rem;
+	width: 95%;
+}
+.note-item .note-title{
+	padding:0.9rem 0.8rem 0.4rem;
+	color: #333;
+	font-size: 1.3rem;
+}
+.note-item .note-intro-text{
+	padding:0.2rem 0.8rem 0.4rem;
+	color: #777;
+	font-size: 1.3rem;
+}
+.note-item .collect-time{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+    align-items: flex-end; 
+	padding:0.4rem 0.8rem 0.9rem;
+	color: #777;
+	font-size: 1.2rem;
+}
+.collect-time .icon-shijian{
+	font-size: 1.4rem;
+}
+.collect-time .collect-time-text{
+	margin-left: 0.6rem;
+}
+.note-item .video-icon{
+	background-color: #70cf95;
+    color: #fff;
+    left: 0;
+    padding: 0.15rem 0.4rem;
+    position: absolute;
+    top: 0;
+    border-bottom-right-radius: 0.3rem;
+}
+.note-item:active{
+	background-color:#fafafa ;
+}
+.note-item .edit-icon{
+	position: absolute;
+	top:0.6rem;
+	right: 0.6rem;
+	width: 2.1rem;
+	height: 2.1rem;
+	border:0.1rem solid #fff;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+}
+.note-item .edit-icon.selected{
+	background-color: rgb(67,149,247);
+}
+.edit-icon .icon-gou{
+	display: inline-block;
+	font-size: 1.4rem;
+}
+
+.edit-icon .icon-gou{
+	display: inline-block;
+	font-size: 1.36rem;
+}
+.notes-edit-opt-nar{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	padding: 1.2rem 0;
+	background-color: #ff5959;
+	color: #fff;	
+	font-size: 1.5rem;
+}
+
+.edit-btn{
+	background-color: #108EE9 !important;
+}
+

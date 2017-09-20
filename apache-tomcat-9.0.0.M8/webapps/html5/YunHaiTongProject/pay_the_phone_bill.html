@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>充话费</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css" />
+		<link rel="stylesheet" href="css/common_css/public_style.css" />
+		<link rel="stylesheet" href="css/pay_phone_bill_flow.css" />
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+
+	<body class="background_color_FF">
+		<div>
+			<div class="title_content">充话费</div>
+			<img class="title_back" src="img/back_btn@2x.png" srcset="img/back_btn@2x.png 2x,img/back_btn@3x.png 3x" />
+		</div>
+		<div class="phone_input_container">
+			<input class="phone_input_container_num" placeholder="请输入手机号" maxlength="13" onpropertychange="setPhoneNum(this)" oninput="setPhoneNum(this)"/>
+			<div class="phone_input_container_content">当前充值手机号</div>
+		</div>
+		<div class="first_line_container">
+			<a class="phone_bill_item" style="">30元</a>
+			<a class="phone_bill_item phone_bill_item_left">50元</a>
+			<a class="phone_bill_item phone_bill_item_left">100元</a>
+		</div>
+		<div class="second_line_container">
+			<a class="phone_bill_item">200元</a>
+			<a class="phone_bill_item phone_bill_item_left pay_bill_selected">500元</a>
+			<a class="phone_bill_item phone_bill_item_left">1000元</a>
+		</div>
+		<div class="phone_bill_need_pay">
+			需付款：<span class="phone_bill_need_pay_num">￥100</span>
+		</div>
+		<div class="pay_bill_btn">充值</div>
+	</body>
+	<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+	<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+	<script>
+		(function($, document) {
+			
+		})(jQuery, document);
+	</script>
+</html>

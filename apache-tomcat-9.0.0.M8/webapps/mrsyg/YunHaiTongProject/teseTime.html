@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/testTime.js"></script>
+    <script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div data-config='{"startTime":"2014/03/27 11:24:34","endTime":"2018/03/28 11:24:34","nowTime":"2014/03/29 18:07:32","startTips":"秒杀倒计时：","endTips":"距离结束：","stopTips":"秒杀结束！"}'></div>
+</body>
+<script type="text/javascript">
+    $('.nowtime').each(function () {
+        var $this = $(this),
+                data = $this.attr('data-config');
+        $this.countDown(eval('(' + data + ')'));
+    });
+</script>
+</html>

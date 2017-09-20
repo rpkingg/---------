@@ -1,0 +1,88 @@
+html,body{
+	background-color: #efefef;
+}
+
+.select-vouchers-container{
+	padding: 0 1.2rem;
+}
+.select-voucher-item{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #fff;
+	margin-top: 1.5rem;
+}
+.select-voucher-item .voucher-amount,
+.select-voucher-item .voucher-use-condition{
+	padding: 2rem 0 2rem 1.6rem;
+}
+
+.voucher-amount{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:baseline;
+}
+
+.select-voucher-item .voucher-amount{
+	border-right: 0.1rem dashed #ddd;
+}
+.voucher-amount span{
+	font-size: 1.2rem;
+}
+.voucher-amount .yuan{
+	font-size: 1.5rem;
+}
+.can-use .voucher-amount span{
+	color: #ff5959;
+}
+.cannot-use .voucher-amount span,
+.cannot-use .voucher-use-condition span{
+	color: #999;
+}
+
+.voucher-amount .amount-text{
+	font-size: 4.1rem;
+}
+
+.voucher-use-condition .full-amount-tip{
+	color: #333;
+	font-size: 1.3rem;
+}
+
+.voucher-use-condition .use-endline,
+.voucher-use-condition .used-store-name{
+	margin-top: 0.4rem;
+	font-size: 1.3rem;
+	color: #777;
+}
+.amount-right-top-icon,.amount-right-bottom-icon{
+	width: 2rem;
+	height: 2rem;
+	background-color: #efefef;
+	position: absolute;
+	border-radius: 50%;
+}
+.amount-right-top-icon{
+    right: -1rem;
+    top: -1rem;
+}
+.amount-right-bottom-icon{
+	right: -1rem;
+    bottom: -1rem;
+}
+.voucher-selected{
+	color: #ff5959;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: -0.6rem;
+}
+
+.voucher-selected .icon-gou{
+	color: #fff;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.5rem;
+}

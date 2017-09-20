@@ -1,0 +1,54 @@
+<%@ page contentType="text/html;charset=GBK" language="java" %>
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-cache"/>
+		<title>我的点赞</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css"/>
+		<link rel="stylesheet" href="css/common_css/public_style.css"/>
+		<link rel="stylesheet" href="css/my_liked_assistant.css"/>
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+	<body>
+		<div>
+			<div class="title_content">我的点赞</div>
+			<img class="title_back" src="img/back_btn@2x.png" srcset="img/back_btn@2x.png 2x,img/back_btn@3x.png 3x" />
+		</div>
+		<div class="margin_top_six" id="my_liked_container">
+			<div class="liked_item_box">
+				<p class="liked_item_box_p">坚果Pro测评：渲染图很丰满，配图很好看</p>
+				<div class="liked_item_box_img liked"></div>
+				<span class="liked_item_box_span">247</span>
+			</div>
+			<div class="liked_item_box">
+				<p class="liked_item_box_p">坚果Pro测评：渲染图很丰满，配图很好看</p>
+				<div class="liked_item_box_img"></div>
+				<span class="liked_item_box_span">247</span>
+			</div>
+			<div class="liked_item_box">
+				<p class="liked_item_box_p">坚果Pro测评：渲染图很丰满，配图很好看</p>
+				<div class="liked_item_box_img"></div>
+				<span class="liked_item_box_span">247</span>
+			</div>
+			<div class="liked_item_box">
+				<p class="liked_item_box_p">魅族5s，评价手机的春天</p>
+				<div class="liked_item_box_img"></div>
+				<span class="liked_item_box_span">247</span>
+			</div>
+			<div class="liked_item_box">
+				<p class="liked_item_box_p">坚果Pro测评：渲染图很丰满，配图很好看</p>
+				<div class="liked_item_box_img"></div>
+				<span class="liked_item_box_span">247</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+	<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+	<script type="text/javascript" src="js/my_liked_assistant.js"></script>
+</html>

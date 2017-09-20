@@ -1,0 +1,12 @@
+.out_of_reach_container{
+	text-align: center;margin-top: 4.08rem;
+}
+.out_of_reach_container img{
+	width: 2.53333333rem;height: 2.24rem;
+}
+.out_of_reach_area{
+	color: #777777;font-size: 0.37333333rem;margin-top: 0.50666667rem;line-height: 1.5;padding: 0 1.92rem;
+}
+.set_delivery_address{
+	font-size: 0.37333333rem;color: #4395F7;border: 1px solid #4395F7;border-radius: 0.08rem;display: inline-block;padding: 0.22666667rem 0.50666667rem;
+}

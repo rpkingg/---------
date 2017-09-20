@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>我的订单</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css" />
+		<link rel="stylesheet" href="css/common_css/public_style.css" />
+		<link rel="stylesheet" href="css/my-order.css">
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+
+	<body class="body-sty">
+		<div class="order-header">
+			<div class="order-header-title">我的订单</div>
+			<div class="order-header-left-container">
+				<div class="order-header-left-return-container">
+					<div class="order-header-left-return-arrow-container">
+						<div class="common-table">
+							<div class="common-table-cell-middle-center">
+								<img src="img/back_btn@2x.png" srcset="img/back_btn@2x.png, back_btn@3x.png" alt="" class="order_header_img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--顶部通用导航栏-->
+		<div class="tab-box">
+			<div class="tab-list">
+				<div class="tab-item">
+					<div class="tab selected">
+						<span>全部</span>
+						<div class="count-point disp_bloc">2</div>
+					</div>
+				</div>
+				<div class="tab-item">
+					<div class="tab">
+						<span>待付款</span>
+						<div class="count-point">2</div>
+					</div>
+				</div>
+				<div class="tab-item">
+					<div class="tab">
+						<span>待发货</span>
+						<div class="count-point">2</div>
+					</div>
+				</div>
+				<div class="tab-item">
+					<div class="tab">
+						<span>待收货</span>
+						<div class="count-point">2</div>
+					</div>
+				</div>
+				<div class="tab-item">
+					<div class="tab">
+						<span>待评价</span>
+						<div class="count-point">2</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--1 全部-->
+		<div id="panel1" class="car-container">
+			<div class="goods-item">
+		<div class="top-box">
+			<div class="select-box">
+				<div class="order_page1_div">
+					<img src="img/shop_logo@2x.png"
+						 srcset="img/shop_logo@2x.png, img/shop_logo@3x.pngx" alt="" class="order_page1_img">
+				</div>
+			</div>
+			<div class="shop-order">
+				<div class="row1">
+					<div class="shopname">百联中环店</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div class="goods-item">
+
+		<div class="bottom-box">
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">苹果 iPhone 7
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">红色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">魅蓝 魅蓝X
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">银色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_all"></div>
+		<div class="bottom-info-box add-h">
+
+			<div class="order-fee-div">￥5688<span class="order-fee-span">（含运费：￥10）</span></div>
+
+			<span class="order-count-span">合计：</span>
+			<span class="order-count-span2">共计2件</span>
+		</div>
+		<div class="bottom-info-box add-h">
+			<span class="order-close">订单已关闭</span>
+			<div class="add-css order-again">再来一单</div>
+		</div>
+	</div>
+
+		</div>
+
+		<!--2 待付款页-->
+		<div id="panel2" class="car-container paddBotm order-panel">
+			<!--<div class="goods-item">
+		<div class="top-box">
+			<div class="select-box">
+				<div class="order_page1_div">
+					<img src="img/shop_logo@2x.png"
+						 srcset="img/shop_logo@2x.png, img/shop_logo@3x.pngx" alt="" class="order_page1_img">
+				</div>
+			</div>
+			<div class="shop-order">
+				<div class="row1">
+					<div class="shopname">百联中环店</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div class="goods-item">
+
+		<div class="bottom-box">
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">苹果 iPhone 7
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">红色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">魅蓝 魅蓝X
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">银色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_all"></div>
+		<div class="bottom-info-box add-h">
+		<div class="order-fee-div">￥5688<span class="order-fee-span">（含运费：￥10）</span></div>
+			<span class="order-count-span">合计：</span>
+			<span class="order-count-span2">共计2件</span>
+		</div>
+		<div class="bottom-info-box add-h">
+			<div class="btn-close add-css order-again">付款</div>
+			<div class="add-css order-cencle">取消订单</div>
+		</div>
+	</div>-->
+		</div>
+
+		<!--3 待发货页-->
+		<div id="panel3" class="car-container paddBotm order-panel">
+			<!--<div class="goods-item">
+		<div class="top-box">
+			<div class="select-box">
+				<div class="order_page1_div">
+					<img src="img/shop_logo@2x.png"
+						 srcset="img/shop_logo@2x.png, img/shop_logo@3x.pngx" alt="" class="order_page1_img">
+				</div>
+			</div>
+			<div class="shop-order">
+				<div class="row1">
+					<div class="shopname">百联中环店</div>
+					<div class="pay-way">在线付款</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div class="goods-item">
+
+		<div class="bottom-box">
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">苹果 iPhone 7
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">红色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">魅蓝 魅蓝X
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">银色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_all"></div>
+		<div class="bottom-info-box add-h">
+			<div class="order-fee-div">￥5688<span class="order-fee-span">（含运费：￥10）</span></div>
+			<span class="order-count-span">合计：</span>
+			<span class="order-count-span2">共计2件</span>
+		</div>
+		<div class="bottom-info-box add-h">
+			<div class="add-css order-deliver-goods">提醒发货</div>
+		</div>
+	</div>-->
+		</div>
+
+		<!--4 待收货页-->
+		<div id="panel4" class="car-container paddBotm order-panel">
+			<!--<div class="goods-item">
+		<div class="top-box">
+			<div class="select-box">
+				<div class="order_page1_div">
+					<img src="img/shop_logo@2x.png"
+						 srcset="img/shop_logo@2x.png, img/shop_logo@3x.pngx" alt="" class="order_page1_img">
+				</div>
+			</div>
+			<div class="shop-order">
+				<div class="row1">
+					<div class="shopname">百联中环店</div>
+					<div class="pay-way">在线付款</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div class="goods-item">
+
+		<div class="bottom-box">
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">苹果 iPhone 7
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">红色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">魅蓝 魅蓝X
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">银色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_all"></div>
+		<div class="bottom-info-box add-h">
+			<div class="order-fee-div">￥5688<span class="order-fee-span">（含运费：￥10）</span></div>
+			<span class="order-count-span">合计：</span>
+			<span class="order-count-span2">共计2件</span>
+		</div>
+		<div class="bottom-info-box add-h">
+			<div class="add-css order-deliver-goods">确认收货</div>
+			<div class="add-css order-cencle">查看物流</div>
+		</div>
+	</div>-->
+		</div>
+
+		<!--5 待评价页-->
+		<div id="panel5" class="car-container paddBotm order-panel">
+			<!--<div class="goods-item">
+		<div class="top-box">
+			<div class="select-box">
+				<div class="order_page1_div">
+					<img src="img/shop_logo@2x.png"
+						 srcset="img/shop_logo@2x.png, img/shop_logo@3x.pngx" alt="" class="order_page1_img">
+				</div>
+			</div>
+			<div class="shop-order">
+				<div class="row1">
+					<div class="shopname">百联中环店</div>
+					<div class="pay-way">在线付款</div>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+
+	<div class="goods-item">
+
+		<div class="bottom-box">
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">苹果 iPhone 7
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">红色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="good">
+				<div class="good-photo">
+					<img src="img/my/img_16@2x.png" alt="">
+				</div>
+				<div class="good-info">
+					<div class="row1">
+						<div class="good-name">魅蓝 魅蓝X
+						</div>
+						<div class="good-price">￥350</div>
+					</div>
+					<div class="row2">
+						<div class="good-color">银色  32G  移动版  套餐一</div>
+						<div class="good-count">x1</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_all"></div>
+		<div class="bottom-info-box add-h">
+			<div class="order-fee-div">￥5688<span class="order-fee-span">（含运费：￥10）</span></div>
+			<span class="order-count-span">合计：</span>
+			<span class="order-count-span2">共计2件</span>
+		</div>
+		<div class="bottom-info-box add-h">
+			<div class="add-css order-again">评价</div>
+			<div class="add-css order-cencle deleteAlert">删除订单</div>
+		</div>
+	</div>-->
+		</div>
+		<!-- 待付款页面支付弹窗 -->
+		<div id="pay-order" class="notice-pay">
+			<div class="shadow"></div>
+			<div class="chose-pay">
+				<div class="chose-pay-text"><span>选择付款方式</span></div>
+				<div class="chose-pay-div">
+					<img src="img/cencle_pay.png" class="chose-pay-img" />
+				</div>
+			</div>
+			<div class="pay-content">
+				<div class="pay-wechat  pay-center">
+					<p class="pay-money">金额<span class="pay-wechat-span">￥1700</span> 请在30分钟内完成支付</p>
+				</div>
+				<div class="pay-wechat pay-way-chose">
+					<img src="img/wechat.png" class="brand">
+					<span>微信支付</span>
+					<img src="img/choose.png" class="chose chose-pay-yes" style="display: block;">
+					<img src="img/choose_no.png" class="chose-pay-no">
+				</div>
+				<div class="pay-wechat pay-way-chose">
+					<img src="img/alipay.png" class="brand">
+					<span>支付宝支付</span>
+					<img src="img/choose.png" class="chose chose-pay-yes1">
+					<img src="img/choose_no.png" class="chose-pay-no">
+				</div>
+				<div class="blank"></div>
+			</div>
+			<div class="sure-pay">确定支付</div>
+		</div>
+
+		<!-- 待评价页面删除订单弹窗 -->
+		<div class="delete-order" style="display: none;">
+			<div class="shadow"></div>
+			<div class="content">
+				<div class="inner-box">
+					<div class="sureDelete">确定删除订单？</div>
+					<div class="ture-false">
+						<span class="ofcourse">确定</span>
+						<span class="ture-cancel">取消</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 待发货页面退款订单弹窗 -->
+		<div class="return-money">
+			<div class="shadow"></div>
+			<div class="content">
+				<div class="inner-box">
+					<div class="sureDelete">是否确认退款，确认退款后请到 客服中心查询售后？
+					</div>
+					<div class="ture-false">
+						<span class="ofcourse changeColor">取消</span>
+						<span class="sure-cancel">确定</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+		<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+		<script type="text/javascript">
+			(function($, document) {
+				//全部
+				//接口路径
+				var urlPath_one = "mrsyg/kquser/MyOrder.form";
+				var need_data_all={};
+				var data_one = myAjax(urlPath_one,need_data_all); //从后台获取接口数据
+				if(data_one != undefined) {
+					init(data_one);
+				}
+
+				function init(datas) {
+					var data = datas.orderinfo;
+					for(var i = 0; i < data.length; i++) {
+						var hl = '<div id="outer_layer">';
+						hl += '<div class="goods-item goods-add" id="add_goods">';
+						hl += '<div class="top-box">';
+						hl += '<div class="select-box">';
+						hl += '</div>';
+						hl += '<div class="shop-order">';
+						hl += '<div class="row1">';
+						hl += '<div class="shopname">' + data[i].shop_name + '</div>';
+						hl += '</div>';
+						hl += '</div>';
+						hl += '</div>';
+						hl += '<div class="line"></div>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							hl += '<div class="goods-item">';
+							hl += '<div class="bottom-box">';
+							hl += '<div class="good">';
+							hl += '<div class="good-photo">';
+							hl += '<img src="' + data[i].goodsinfo[j].picture_url2x + '" alt="">';
+							hl += '</div>';
+							hl += '<div class="good-info">';
+							hl += '<div class="row1">';
+							hl += '<div class="good-name">' + data[i].goodsinfo[j].product_name + '</div>';
+							hl += '<div class="good-price">￥' + data[i].goodsinfo[j].product_price + '</div>';
+							hl += '</div>';
+							hl += '<div class="row2">';
+							hl += '<div class="good-color">' + data[i].goodsinfo[j].color + '&nbsp' + data[i].goodsinfo[j].memory_capacity + '&nbsp' + data[i].goodsinfo[j].supplier_name + '&nbsp' + data[i].goodsinfo[j].contract_name + '</div>';
+							hl += '<div class="good-count">'
+							x + data[i].goodsinfo[j].product_id + '</div>';
+							hl += '</div>';
+							hl += '</div>';
+							hl += '</div>';
+							hl += '</div>';
+							hl += '</div>';
+							hl += '<div class="line"></div>';
+						}
+						hl += '</div>';
+						hl += '</div>';
+						hl += '<div class="line_all"></div>';
+						hl += '<div class="bottom-info-box add-h">';
+						hl += '<div class="order-fee-div">￥' + data[i].pay_amount + '<span class="order-fee-span">（含运费：￥10）</span></div>';
+						hl += '<span class="order-count-span">合计：</span>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							var count = data[i].goodsinfo[j].product_number;
+							count++;
+							hl += '<span class="order-count-span2">共计' + count + '件</span>';
+						};
+						hl += '</div>';
+						if(data[i].order_status == "1") {
+							hl += '<div class="bottom-info-box add-h">';
+							hl += '<div class="btn-close add-css order-again">付款</div>';
+							hl += '<div class="add-css order-cencle">取消订单</div>';
+							hl += '</div>';
+						} else if(data[i].order_status == "2") {
+							hl += '<div class="bottom-info-box add-h">';
+							hl += '<div class="add-css order-deliver-goods">提醒发货</div>';
+							hl += '</div>';
+						} else if(data[i].order_status == "3") {
+							hl += '<div class="bottom-info-box add-h">';
+							hl += '<div class="add-css order-deliver-goods">确认收货</div>';
+							hl += '<div class="add-css order-cencle">查看物流</div>';
+							hl += '</div>';
+						} else if(data[i].order_status == "4") {
+							hl += '<div class="bottom-info-box add-h">';
+							hl += '<div class="add-css order-again">评价</div>';
+							hl += '<div class="add-css order-cencle deleteAlert">删除订单</div>';
+							hl += '</div>';
+						}
+						hl += '</div>';
+						hl += '</div>';
+						hl += '</div>';
+						hl += '<div class="line_interval"></div>'
+						$(hl).appendTo("#panel1");
+					}
+				}
+
+				//待付款
+				//接口路径
+				var urlPath_two = "mrsyg/kquser/MyOrder.form?customer_id=155&order_status=1";
+				var data_two = myAjax(urlPath_two); //从后台获取接口数据
+				if(data_two != undefined) {
+					init2(data_two);
+				}
+
+				function init2(datas) {
+					var data = datas.orderinfo;
+					for(var i = 0; i < data.length; i++) {
+						var html = '<div class="goods-item goods-add2">';
+						html += '<div class="top-box">';
+						html += '<div class="select-box">';
+						html += '</div>';
+						html += '<div class="shop-order">';
+						html += '<div class="row1">';
+						html += '<div class="shopname">' + data[i].shop_name + '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line"></div>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							var html = '<div class="goods-item">';
+							html += '<div class="bottom-box">';
+							html += '<div class="good">';
+							html += '<div class="good-photo">';
+							html += '<img src="' + data[i].goodsinfo[j].picture_url2x_flg + '" alt="">';
+							html += '</div>';
+							html += '<div class="good-info">';
+							html += '<div class="row1">';
+							html += '<div class="good-name">' + data[i].goodsinfo[j].product_name_flg + '</div>';
+							html += '<div class="good-price">￥' + data[i].goodsinfo[j].product_price_flg + '</div>';
+							html += '</div>';
+							html += '<div class="row2">';
+							html += '<div class="good-color">' + data[i].goodsinfo[j].color_flg + '&nbsp' + data[i].goodsinfo[j].memory_capacity_flg + '&nbsp' + data[i].goodsinfo[j].supplier_name_flg + '&nbsp' + data[i].goodsinfo[j].contract_name_flg + '</div>';
+							html += '<div class="good-count">x' + data[i].goodsinfo[j].product_id_flg + '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+						}
+						html += '<div class="line">';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="order-fee-div">￥' + data[i].pay_amount + '<span class="order-fee-span">（含运费：￥10）</span></div>';
+						html += '<span class="order-count-span">合计：</span>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							html += '<span class="order-count-span2">共计' + data[i].goodsinfo[j].product_number + '件</span>';
+						}
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="btn-close add-css order-again">付款</div>';
+						html += '<div class="add-css order-cencle">取消订单</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line_interval"></div>';
+						$(html).appendTo("#panel2");
+					}
+				}
+
+				//待发货
+				//接口路径
+				var urlPath_thr = "mrsyg/kquser/MyOrder.form?customer_id=155&order_status=2";
+				var data_thr = myAjax(urlPath_thr); //从后台获取接口数据
+				if(data_thr != undefined) {
+					init3(data_thr);
+				}
+
+				function init3(datas) {
+					var data = datas.orderinfo;
+					for(var i = 0; i < data.length; i++) {
+						var html = '<div class="goods-item goods-add3">';
+						html += '<div class="top-box">';
+						html += '<div class="select-box">';
+						html += '</div>';
+						html += '<div class="shop-order">';
+						html += '<div class="row1">';
+						html += '<div class="shopname">' + data[i].shop_name + '</div>';
+						html += '<div class="pay-way">在线付款</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line"></div>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							var html = '<div class="goods-item">';
+							html += '<div class="bottom-box">';
+							html += '<div class="good">';
+							html += '<div class="good-photo">';
+							html += '<img src="' + data[i].goodsinfo[j].picture_url2x_flg + '" alt="">';
+							html += '</div>';
+							html += '<div class="good-info">';
+							html += '<div class="row1">';
+							html += '<div class="good-name">' + data[i].goodsinfo[j].product_name_flg + '</div>';
+							html += '<div class="good-price">￥' + data[i].goodsinfo[j].product_price_flg + '</div>';
+							html += '</div>';
+							html += '<div class="row2">';
+							html += '<div class="good-color">' + data[i].goodsinfo[j].color_flg + '&nbsp' + data[i].goodsinfo[j].memory_capacity_flg + '&nbsp' + data[i].goodsinfo[j].supplier_name_flg + '&nbsp' + data[i].goodsinfo[j].contract_name_flg + '</div>';
+							html += '<div class="good-count">x' + data[i].goodsinfo[j].product_id_flg + '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+						}
+						html += '<div class="line">';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="order-fee-div">￥' + data[i].pay_amount + '<span class="order-fee-span">（含运费：￥10）</span></div>';
+						html += '<span class="order-count-span">合计：</span>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							html += '<span class="order-count-span2">共计' + data[i].goodsinfo[j].product_number + '件</span>';
+						}
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="add-css order-deliver-goods">提醒发货</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line_interval"></div>';
+						$(html).appendTo("#panel3");
+					}
+
+				}
+
+				//待收货
+				//接口路径
+				var urlPath_fou = "mrsyg/kquser/MyOrder.form?customer_id=155&order_status=3";
+				var data_fou = myAjax(urlPath_fou); //从后台获取接口数据
+				if(data_fou != undefined) {
+					init4(data_fou);
+				}
+
+				function init4(datas) {
+					var data = datas.orderinfo;
+					for(var i = 0; i < data.length; i++) {
+						var html = '<div class="goods-item goods-add3">';
+						html += '<div class="top-box">';
+						html += '<div class="select-box">';
+						html += '</div>';
+						html += '<div class="shop-order">';
+						html += '<div class="row1">';
+						html += '<div class="shopname">' + data[i].shop_name + '</div>';
+						html += '<div class="pay-way">在线付款</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line"></div>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							var html = '<div class="goods-item">';
+							html += '<div class="bottom-box">';
+							html += '<div class="good">';
+							html += '<div class="good-photo">';
+							html += '<img src="' + data[i].goodsinfo[j].picture_url2x_flg + '" alt="">';
+							html += '</div>';
+							html += '<div class="good-info">';
+							html += '<div class="row1">';
+							html += '<div class="good-name">' + data[i].goodsinfo[j].product_name_flg + '</div>';
+							html += '<div class="good-price">￥' + data[i].goodsinfo[j].product_price_flg + '</div>';
+							html += '</div>';
+							html += '<div class="row2">';
+							html += '<div class="good-color">' + data[i].goodsinfo[j].color_flg + '&nbsp' + data[i].goodsinfo[j].memory_capacity_flg + '&nbsp' + data[i].goodsinfo[j].supplier_name_flg + '&nbsp' + data[i].goodsinfo[j].contract_name_flg + '</div>';
+							html += '<div class="good-count">x' + data[i].goodsinfo[j].product_id_flg + '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+						}
+						html += '<div class="line">';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="order-fee-div">￥' + data[i].pay_amoun + '<span class="order-fee-span">（含运费：￥10）</span></div>';
+						html += '<span class="order-count-span">合计：</span>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							html += '<span class="order-count-span2">共计' + data[i].goodsinfo[j].product_number + '件</span>';
+						}
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="add-css order-deliver-goods">确认收货</div>';
+						html += '<div class="add-css order-cencle">查看物流</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line_interval"></div>';
+						$(html).appendTo("#panel4");
+					}
+				}
+
+				//待评价
+				//接口路径
+				var urlPath_fiv = "mrsyg/kquser/MyOrder.form?customer_id=155&order_status=4";
+				var data_fiv = myAjax(urlPath_fiv); //从后台获取接口数据
+				if(data_fiv != undefined) {
+					init5(data_fiv);
+				}
+
+				function init5(datas) {
+					var data = datas.orderinfo;
+					for(var i = 0; i < data.length; i++) {
+						var html = '<div class="goods-item goods-add3">';
+						html += '<div class="top-box">';
+						html += '<div class="select-box">';
+						html += '</div>';
+						html += '<div class="shop-order">';
+						html += '<div class="row1">';
+						html += '<div class="shopname">' + data[i].shop_name + '</div>';
+						html += '<div class="pay-way">在线付款</div>';
+						html += '<div class="line"></div>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							var html = '<div class="goods-item">';
+							html += '<div class="bottom-box">';
+							html += '<div class="good">';
+							html += '<div class="good-photo">';
+							html += '<img src="' + data[i].goodsinfo[j].picture_url2x_flg + '" alt="">';
+							html += '</div>';
+							html += '<div class="good-info">';
+							html += '<div class="row1">';
+							html += '<div class="good-name">' + data[i].goodsinfo[j].product_name_flg + '</div>';
+							html += '<div class="good-price">￥' + data[i].goodsinfo[j].product_price_flg + '</div>';
+							html += '</div>';
+							html += '<div class="row2">';
+							html += '<div class="good-color">' + data[i].goodsinfo[j].color_flg + '&nbsp' + data[i].goodsinfo[j].memory_capacity_flg + '&nbsp' + data[i].goodsinfo[j].supplier_name_flg + '&nbsp' + data[i].goodsinfo[j].contract_name_flg + '</div>';
+							html += '<div class="good-count">x' + data[i].goodsinfo[j].product_id_flg + '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>';
+							html += '</div>'
+						}
+
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line">';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="order-fee-div">￥' + data[i].pay_amoun + '<span class="order-fee-span">（含运费：￥10）</span></div>';
+						html += '<span class="order-count-span">合计：</span>';
+						for(var j = 0; j < data[i].goodsinfo.length; j++) {
+							html += '<span class="order-count-span2">共计' + data[i].goodsinfo[j].product_number + '件</span>';
+						}
+						html += '</div>';
+						html += '<div class="bottom-info-box add-h">';
+						html += '<div class="add-css order-again">评价</div>';
+						html += '<div class="add-css order-cencle deleteAlert">删除订单</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '</div>';
+						html += '<div class="line_interval"></div>';
+						$(html).appendTo("#panel5");
+					}
+				}
+
+
+				$(".tab").on("click", function(e) {
+					var tabIndex = $(this).parent().index();
+					$(".tab-list .tab-item").each(function() {
+						if($(this).index() == tabIndex) {
+							$(this).children().addClass("selected");
+							$(this).find('.count-point').show();
+						} else {
+							$(this).children().removeClass("selected");
+							$(this).find('.count-point').hide();
+						}
+					});
+
+					switch(tabIndex) {
+						case 0:
+							showHidePanel(tabIndex + 1);
+							break;
+						case 1:
+							showHidePanel(tabIndex + 1);
+							break;
+						case 2:
+							showHidePanel(tabIndex + 1);
+							break;
+						case 3:
+							showHidePanel(tabIndex + 1);
+							break;
+						case 4:
+							showHidePanel(tabIndex + 1);
+							break;
+						case 5:
+							showHidePanel(tabIndex + 1);
+							break;
+						default:
+							break;
+					}
+				});
+
+				function showHidePanel(index) {
+					$("#panel" + index).show().siblings(".car-container").hide();
+				}
+
+				//点击付款弹窗
+				$('.btn-close').on('click', function() {
+					$('#pay-order').show();
+				});
+
+				//点击确定付款关闭弹窗
+				$('.cancel-pay').on('click', function() {
+					$('#pay-order').hide();
+				});
+
+				//待评价删除订单
+				$('.deleteAlert').on('click', function() {
+					$('.delete-order').show();
+				});
+
+				//待付款页面 点击关闭取消订单弹窗
+				$('.close img').on('click', function() {
+					$('#close-order-panel').hide();
+				});
+
+				//待评价页面删除订单弹框，点击取消，隐藏弹框
+				$('.ture-cancel').on('click', function() {
+					$('.delete-order').hide();
+				});
+
+				$('.return-pay').on('click', function(e) {
+					$('.return-money').show();
+				});
+
+				//支付点击显示勾选状态
+				$('.pay-way').on('click', function() {
+					$(this).find('.chose').show();
+					$(this).siblings().find('.chose').hide();
+				});
+
+				//点击X关闭支付弹窗
+				$('.chose-pay-img').on('click', function() {
+					$('#pay-order').hide();
+				});
+
+				//点击打钩
+				$('.pay-way-chose').on('click', function() {
+					$(this).find('.chose').show();
+					$(this).siblings().find('.chose').hide();
+				});
+			})(jQuery, document);
+		</script>
+	</body>
+
+</html>

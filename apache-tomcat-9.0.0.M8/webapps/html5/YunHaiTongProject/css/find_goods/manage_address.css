@@ -1,0 +1,67 @@
+html,body{
+	background-color: #efefef;
+}
+.manage-address-container{
+	border-top: 0.1rem solid #ddd;
+	padding-bottom: 4.2rem;
+}
+.manage-address-container .goods-address{
+	padding: 1.5rem;
+	border-bottom: 0.1rem solid #ddd;	
+}
+.address-opt-bar{
+	padding: 1rem 1.5rem;
+	color: #777;
+}
+.address-opt-bar span:nth-child(even){
+	font-size: 1.3rem;
+}
+.address-opt-bar .icon-shanchu{
+	font-size: 1.8rem;
+}
+.address-opt-bar .edit-address {
+	margin-top: 0.2rem;
+}
+.address-opt-bar .icon-bianji2{
+	font-size: 1.5rem;
+}
+.address-opt-bar .default-text{
+	color: #4395f7;
+}
+.address-opt-bar .set-default{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+    align-items: center; 
+}
+.address-opt-bar .set-default span:not(:first-child){
+	margin-left: 0.5rem;
+}
+.manage-address-container .goods-address-item:not(:first-child){
+	margin-top: 0.8rem;
+}
+.goods-address-item{
+	background-color: #fff;
+}
+.address-user-info{
+	color: #333;
+	font-size: 1.4rem;
+}
+.address-detail-info{
+	color: #777;
+	font-size: 1.4rem;
+}
+.default-address-tip{
+	color: #4395f7;
+}
+.icon-quan{
+	font-size: 2rem;
+	color: #777;
+}
+.icon-xuanzedui{
+	font-size: 2rem;
+	color: #4395f7;
+}
+.add_new_address{
+	position: fixed;left: 0;bottom: 0;background-color: red;width: 100%;text-align: center;color: #FFFFFF;height: 4rem;line-height: 4rem;font-size: 1.4rem;
+}

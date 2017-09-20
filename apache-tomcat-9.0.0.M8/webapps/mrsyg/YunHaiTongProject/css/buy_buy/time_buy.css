@@ -1,0 +1,87 @@
+html,body{
+	background-color: #efefef;
+}
+.time-buy-container img{
+	width: 100%;
+	height: auto;
+}
+.buy-buy-nav-bar{
+	padding: 1.5rem 0;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+    align-items: flex-end; 
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 1030;
+}
+.buy-buy-nav-bar span{
+	font-size: 1.4rem;
+	color: #999;
+}
+.buy-buy-nav-bar .active{
+	font-size: 1.6rem;
+	color: #333;
+}
+/*.time-buy-content{
+	margin-top: 2rem;
+}*/
+.time-buy-item{
+	background-color: #fff;
+	margin-bottom: 1rem;
+}
+.time-buy-goods-info{
+	padding: 1.5rem 1.2rem;
+	font-size: 1.6rem;
+	color: #333;
+}
+.time-buy-item:active{
+	background-color:#fafafa ;
+}
+.goods-base-info,.time-endline-opt{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+    align-items: center; 
+}
+.goods-base-info .goods-name{
+	font-size: 1.6rem;
+	color: #333;
+	letter-spacing: 0.1rem;
+}
+.goods-base-info .goods-price{
+	font-size: 2.1rem;
+	color: #ff5959;
+	letter-spacing: 0.1rem;
+}
+.goods-base-info .yuan{
+	font-size: 1.5rem;
+	color: #ff5959;
+}
+.time-endline-opt{
+	margin-top: 0.2rem;
+}
+.time-endline-opt .count-down{
+	color: #777;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+    align-items: flex-end; 
+}
+.count-down .icon-shijian{
+	margin-right: 0.5rem;
+	font-size: 1.4rem;
+}
+.time-endline-opt .buy-now{
+	padding: 0.6rem 0;
+	background-color: #4395f7;
+	color: #fff;
+	border-radius: 2rem;
+	font-size: 1.3rem;
+}
+
+

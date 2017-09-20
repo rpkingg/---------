@@ -1,0 +1,155 @@
+html,body{
+	background-color: #efefef;
+}
+.look-header-container{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	padding: 1.5rem 0.5rem 0.3rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.look-location span{
+	font-size: 2.8rem;
+	color: #999;
+}
+.look-email{
+	width: 10%;
+}
+.look-email span{
+	font-size: 2.8rem;
+	color: #999;
+}
+.look-search input{
+	display: table-cell;
+	float: left;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+	border-radius: 10rem;
+    background-color: #f0f0f0;
+    background-image: none;
+    border: 0.1rem solid #f0f0f0;
+    color: #b1b1b4;
+    font-size: 1.4rem;
+    line-height: 1.42857;
+    padding: 0.6rem 1.2rem;
+}
+.look-search input::-moz-placeholder,
+.look-search input:-moz-placeholder{
+    text-align: center;
+}
+.look-search input::-webkit-input-placeholder{
+    text-align: center;
+}
+.look-search input::-ms-input-placeholder{
+    text-align: center;
+}
+.look-search .icon-search{
+	color: #8f8f94;
+    font-size: 1.7rem;
+    left: 23%;
+    position: absolute;
+    top: 0.4rem;
+}
+.email-count-tip{
+	position: absolute;
+	right: 0;
+	top:0.8rem;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-color: #FF5959;
+	border-radius: 50%;
+}
+.look-content-item{
+	background-color: #fff;
+	margin-bottom: 0.8rem;
+}
+.look-item-cont{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0.6rem 1.2rem;
+}
+.look-assistant-pic img{
+	border-radius: 50%;
+}
+.look-assistant-info,.look-assistant-other{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	flex-direction: column;
+}
+.look-assistant-info{
+	align-items: flex-start;
+}
+.look-assistant-other{
+	align-items: flex-end;
+}
+.look-assistant-info .assistant-name{
+	color: #333;
+	font-size: 1.5rem;
+}
+.look-assistant-info .store-name{
+	color: #777;
+	font-size: 1.3rem;
+}
+.view-count{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.look-assistant-other{
+	color: #777;
+	font-size: 1.3rem;
+}
+.view-count .icon-eye-open{
+	color: #999;
+    font-size: 1.6rem;
+    margin-right: 0.3rem;
+}
+.base-info-tip{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0,0,0,0.4);
+	padding: 0.7rem 1.2rem;
+	color: #fff;
+}
+.look-item-base-info .goods-name{
+	font-size: 1.7rem;
+}
+.look-item-base-info .goods-video-time{
+	font-size: 1.4rem;
+}
+.look-item-base-info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.bofang{
+	padding: 4.3rem 0;
+}
+.bofang .icon-rectangle1{
+	font-size: 5rem;
+	color: #fff;
+}
+.look-content-item:active{
+	background-color: #fafafa;
+}

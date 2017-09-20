@@ -1,0 +1,704 @@
+html {
+    font-size: 10px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: "HiraginoSansGB_W3";
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+.daily_head {
+    width: 100%;
+    background-color: #E6E6E6;
+    padding-bottom: 1.2rem;
+}
+
+.reds_text{
+    font-size: 0.45333333rem;
+}
+
+.share_img{
+    width: 0.61333333rem;
+    height: 0.61333333rem;
+    line-height: 0.61333333rem;
+    float: right;
+    margin-top: -0.94666667rem;
+    margin-right: 0.29333333rem;
+}
+
+.young_img{
+    height: 6.08rem;
+    width: 10rem;
+}
+
+.first_part{
+    height: 3.49333333rem;
+    background-color: #FFFFFF;
+}
+
+.first_part_head{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-left: 0.32rem;
+    margin-top: 0.4rem;
+    float: left;
+}
+
+.head_img{
+    width: 1.36rem;
+    height: 1.36rem;
+    line-height: 1.36rem;
+}
+
+.fans_column{
+    width: 2.37rem;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    height: 0.96rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.61333333rem;
+}
+
+.fans_num{
+    font-size: 0.37333333rem;
+    color: #777777;float:right;
+    margin-right: 0.8rem;
+}
+
+.fans_text{
+    font-size: 0.34666667rem;
+    color: #777777;float: right;
+    margin-right: 0.586666667rem;
+    clear: both;
+}
+
+.fabulous_column{
+    width: 1.86rem;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    height: 0.96rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.61333333rem;
+}
+
+.fabulous_num{
+    font-size: 0.37333333rem;
+    color: #777777;
+    text-align: center;
+}
+
+.fabulous_wri{
+    font-size: 0.34666667rem;
+    color: #777777;
+    text-align: center;
+}
+
+.reward_column{
+    width: 1.86rem;
+    float: left;
+    border-right: 1px solid #DDDDDD;
+    height: 0.96rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.61333333rem;
+}
+
+.reward_num{
+    font-size: 0.37333333rem;
+    color: #777777;
+    text-align: center;
+}
+
+.reward_wri{
+    font-size: 0.34666667rem;
+    color: #777777;
+    text-align: center;
+}
+
+.collection_column{
+    width: 1.86rem;
+    float: left;
+    height: 1.36rem;
+    margin-top: 0.61333333rem;
+}
+
+.collection_num{
+    font-size: 0.37333333rem;
+    color: #777777;
+    text-align: center;
+}
+
+.collection_wri{
+    font-size: 0.34666667rem;
+    color: #777777;
+    text-align: center;
+}
+
+.float_left{
+    float: left;
+}
+
+.your_name{
+    margin-left: 0.48rem;
+    font-size: 0.34666667rem;
+    color: #333333;
+}
+
+.trade_name{
+    margin-top:0.29333333rem;
+    margin-left: 0.48rem;
+    font-size: 0.32rem;
+    color: #777777;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    text-align: center;
+}
+
+.chat_first{
+    float: right;
+    color: #4395F7;
+    border: 1px solid #4395F7;
+    text-align: center;
+    width:2.16rem;
+    height:0.74666667rem;
+    font-size: 0.34666667rem;
+    border-radius: 0.10666667rem;
+    margin-right: 0.37rem;
+    margin-top: 0.19333333rem;
+}
+
+.chat_first_p{
+    margin-top: 0.16rem;
+}
+
+.second_part{
+    height: 5.62rem;
+    background-color: #FFFFFF;
+}
+
+.short_line_left{
+    border-bottom: 1px solid #DFDFDD;
+    width: 0.93333333rem;
+    float: left;
+    margin-left: 2.18rem;
+    margin-top: 0.56rem;
+}
+
+.short_line_right{
+    border-bottom: 1px solid #DFDFDD;
+    width: 0.93333333rem;
+    float: left;
+    margin-left: 0.8rem;
+    margin-top: 0.56rem;
+}
+
+.reds_recommend{
+    font-size: 0.37333333rem;
+    float: left;
+    margin-left: 0.8rem;
+    margin-top: 0.35rem;
+}
+
+.reds_message{
+    border:1px solid #DDDDDD;
+    border-radius:0.10666667rem;
+    height: 3.21333333rem;
+    float: left;
+    clear: both;
+    margin-top: 1.22666667rem;
+    margin-left: 0.26666667rem;
+    width: 3.01333333rem;
+}
+
+.reds_headpor{
+    margin-top: -0.726667rem;
+    position: absolute;
+    height: 1.36rem;
+    width: 1.36rem;
+    margin-left: 0.84333333rem;
+}
+
+.reds_name{
+    font-size: 0.34666667rem;
+    margin-top: 0.90666667rem;
+    text-align: center;
+}
+
+.reds_fans_num{
+    margin-top: 0.26666667rem;
+    font-size: 0.26666667rem;
+    text-align: center;
+    color: #999999;
+}
+
+.reds_chat{
+    background-color:#4395F7;
+    float: right;color: #FFFFFF;
+    border: 1px solid #4395F7;
+    text-align: center;width:2.29333333rem;
+    height:0.74666667rem;
+    font-size: 0.34666667rem;
+    border-radius: 0.10666667rem;
+    margin-right: 0.37rem;
+    margin-top: 0.19333333rem;
+}
+
+.reds_chat_img{
+    margin-top: 0.16rem;
+    width: 0.42666667rem;
+    height: 0.37333333rem;
+    float: left;
+    margin-left: 0.58666667rem;
+}
+
+.reds_chat_p{
+    margin-top:0.1rem;
+    text-align: center;
+    width: 1.8rem;
+}
+
+.reds_message_two{
+    margin-left: 0.16666667rem;
+    border:1px solid #DDDDDD;
+    border-radius:0.10666667rem;
+    height: 3.21333333rem;
+    float: left;
+    margin-top: 1.22666667rem;
+    width: 3.01333333rem;
+}
+
+.reds_headpor_two{
+    margin-top: -0.726667rem;
+    position: absolute;
+    height: 1.36rem;
+    width: 1.36rem;
+    margin-left: 0.84333333rem;
+}
+
+.reds_name_two{
+    font-size: 0.34666667rem;
+    margin-top: 0.90666667rem;
+    text-align: center;
+}
+
+.reds_fans_num_two{
+    margin-top: 0.26666667rem;
+    font-size: 0.26666667rem;
+    text-align: center;
+    color: #999999;
+}
+
+.reds_chat_two{
+    float: right;
+    color: #4395F7;
+    border: 1px solid #4395F7;
+    text-align: center;
+    width:2.29333333rem;
+    height:0.74666667rem;
+    font-size: 0.34666667rem;
+    border-radius: 0.10666667rem;
+    margin-right: 0.37rem;
+    margin-top: 0.19333333rem;
+}
+
+.reds_chat_p_two{
+    margin-top: 0.16rem;
+}
+
+.reds_message_three{
+    margin-left: 0.16666667rem;
+    border:1px solid #DDDDDD;
+    border-radius:0.10666667rem;
+    height: 3.21333333rem;
+    float: left;
+    margin-top: 1.22666667rem;
+    width: 3.01333333rem;
+}
+
+.reds_headpor_three{
+    margin-top: -0.726667rem;
+    position: absolute;
+    height: 1.36rem;
+    width: 1.36rem;
+    margin-left: 0.84333333rem;
+}
+
+.reds_name_three{
+    font-size: 0.34666667rem;
+    margin-top: 0.90666667rem;
+    text-align: center;
+}
+
+.reds_fans_num_three{
+    margin-top: 0.26666667rem;
+    font-size: 0.26666667rem;
+    text-align: center;
+    color: #999999;
+}
+
+.reds_chat_three{
+    float: right;
+    color: #4395F7;
+    border: 1px solid #4395F7;
+    text-align: center;
+    width:2.29333333rem;
+    height:0.74666667rem;
+    font-size: 0.34666667rem;
+    border-radius: 0.10666667rem;
+    margin-right: 0.37rem;
+    margin-top: 0.19333333rem;
+}
+
+.reds_chat_p_three{
+    margin-top: 0.16rem;
+}
+
+.third_part{
+    height: 2.66666667rem;
+    background-color: #FFFFFF;
+}
+
+.discuss_message{
+    border-radius: 50%;
+    background-color: #4395F7;
+    height: 0.4rem;
+    width: 0.4rem;
+    float:left;
+    margin-top: 0.45333333rem;
+    margin-left: 0.4rem;
+}
+
+.discuss_message_img{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-left: 0.09rem;
+    position: absolute;
+    margin-top: 0.09rem;
+}
+
+.discuss_part{
+    font-size: 0.32rem;
+    float: left;
+    margin-left: 0.14rem;
+    margin-top: 0.45333333rem;
+}
+
+.discuss_headpro{
+    float: left;
+    clear: both;
+    margin-left: 0.32rem;
+    margin-top: 0.66666667rem;
+    height: 0.96rem;
+    width: 0.96rem;
+    border-radius: 50%;
+}
+
+.discuss_headpro_img{
+    height: 0.96rem;
+    width: 0.96rem;
+    border-radius: 50%;
+}
+
+.daily_own_view{
+    float: left;
+    margin-left: 0.32rem;
+    margin-top: 0.66666667rem;
+    width: 7.22666667rem;
+    font-size: 0.34666667rem;
+}
+
+.p_input{
+    background-color: #F5F5F5;
+    border-radius: 0.13333333rem;
+    height: 0.96rem;
+    line-height:0.96rem;
+}
+
+.your_view{
+    color: #999999;
+    font-size: 0.34666667rem;
+    position: absolute;
+    margin-top: -0.72rem;
+    margin-left: 0.29rem;
+}
+
+.emotionnice_img{
+    width: 0.74666667rem;
+    height: 0.74666667rem;
+    margin-top: -0.85rem;
+    float: right;
+    margin-right: -1rem;
+}
+
+.footer_discuss{
+    height: 2.66666667rem;
+    background-color: #FFFFFF;
+}
+
+.input{
+    display: none;
+}
+
+.qqFace {
+    margin-top: 4px;
+    background: #fff;
+    padding: 2px;
+    border: 1px #dfe6f6 solid;
+}
+.qqFace table td {
+    padding: 0px;
+}
+.qqFace table td img {
+    cursor: pointer;
+    border: 1px #fff solid;
+    width: 0.42666667rem;
+    height: 0.4rem;
+}
+.qqFace table td img:hover {
+    border: 1px #0066cc solid;
+}
+.dis_img{
+    width: 0.42666667rem;
+    height: 0.4rem;
+}
+
+/*评论*/
+.evaluation_container {
+    padding: 0.4rem 0.32rem;
+}
+
+.evaluation_container_reviewer {
+    height: 0.96rem;
+    position: relative;
+    line-height: 0.96rem;
+    font-size: 0.34666667rem;
+    color: #333333;
+}
+
+.evaluation_container_reviewer_pic {
+    width: 0.96rem;
+    height: 0.96rem;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.evaluation_container_reviewer_name {
+    margin-left: 1.12rem;
+}
+
+.evaluation_content_box {
+    padding-left: 1.12rem;
+}
+
+.evaluation_content {
+    color: #777777;
+    font-size: 0.34666667rem;
+}
+
+.emoji_style {
+    width: 0.42666667rem;
+    height: 0.4rem;
+}
+
+.evaluation_other_content_box {
+    font-size: 0.32rem;
+    color: #999999;
+    padding-top: 0.37333333rem;
+}
+
+.evaluation_time {
+    display: inline-block;
+}
+
+.evaluation_coloud_money_box {
+    display: inline-block;
+    padding-left: 0.42666667rem;
+}
+
+.coloud_money_img {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.comments_num_box {
+    display: inline-block;
+    float: right;
+}
+
+.comment_and_zan_img {
+    width: 0.42666667rem;
+    height: 0.4rem;
+}
+
+.zan_num_box {
+    display: inline-block;
+    float: right;
+    margin-right: 0.82666667rem;
+}
+
+.reply_content_box {
+    padding: 0.8rem 0.37333333rem 0.4rem 0.37333333rem;
+    border: 0.10666667rem;
+    background-image: url(../img/comment_bg.png);
+}
+.rest_reply{
+    color: #4395F7;font-size: 0.29333333rem;padding-top: 0.4rem;
+}
+.mask{
+    opacity:0.6;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color:#000000;
+    z-index:101;
+}
+.shang-dialog{
+	text-align: center;
+	border-radius: 0.50667rem;
+	background-color: #FFFFFF;
+	width: 7.36rem;
+	height: 7.22666rem;
+	position: fixed;
+	left: 1.333333rem;
+	top: 5.30666rem;
+	z-index: 102;
+}
+.dialog-title{
+	margin-top: 0.4rem;
+	margin-bottom: 0.366667rem;
+	font-size: 0.42666rem;
+	color: #333333;
+}
+.close-btn{
+	font-size: 0.34667rem;
+	position: absolute;
+	color: #8E8E8E;
+	float: right;
+	top: 0.4rem;
+	right: 0.4rem;
+}
+.seclted_style {	
+	text-align: left;
+	height:0.65rem;
+	width:6.56rem;
+	font-size:0.34667rem;
+	background-color: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	border-radius: 0.133333rem;
+	display: inline-block;
+	padding-left: 0.293333rem;
+	padding-top: 0.34667rem;
+}
+.seclted_options_ul {
+	display: none;
+	position: absolute;
+	width:6.8rem;
+	margin-left: 0.24rem;
+	background-color: white;
+	max-height: 2.2rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 1px solid #DDDDDD;
+}
+.seclted_options_li {
+	text-align: left;
+	padding: 0.3rem 0 0.3rem 0.29333rem;
+	border-bottom: 1px solid #DDDDDD;
+	font-size: 0.346666667rem;
+	color: #333333;
+}
+.count-container{
+	margin-top:0.2667rem;
+}
+.shang-minus{
+	color: #BBBBBB;
+}
+.shang-count{
+	padding-left: 1.62667rem;
+	padding-right: 1.62667rem;
+	font-size: 0.613333rem;
+}
+.shang-add{
+	color: #BBBBBB;
+}
+.shang-btn{
+	width:4.82667rem;
+	height:1.14667rem;
+	margin-top:0.63667rem;
+	background-color: #4395F7;
+	border-radius: 0.50667rem;
+	color: #FFFFFF;
+	font-size: 0.373333333rem;
+}
+.yunbi-remained{
+	font-size: 0.293333rem;
+	margin-top: 0.32rem;
+	color: #999999;
+}
+.chat-dialog{
+	text-align: center;
+	border-radius: 0.2667rem;
+	background-color: #FFFFFF;
+	width: 7.36rem;
+	height: 6.96rem;
+	position: fixed;
+	left: 1.333333rem;
+	top: 5.30666rem;
+	z-index: 102;
+}
+.chat-title{
+	font-size: 0.42666rem;
+	margin-top: 0.326666667rem;
+	color: #333333;
+}
+.reds-container{
+	padding-top: 0.7rem;
+	font-size: 0.42667rem;
+	color: #333333;
+}
+.tip{
+	height: 0.88rem;
+	padding:0.406666667rem 1.37333rem 0.906666667rem 1.37333rem;
+	color: #999999;
+	font-size: 0.346666667rem;
+}
+.btn-container{
+	width: 100%;
+	height: 1.2rem;
+	position: absolute;
+	border-top: 1px solid #DDDDDD;
+	left: 0;
+	bottom: 0;
+}
+.cancel-btn{
+	font-size: 0.426666667rem;
+	border-right:1px solid #DDDDDD;
+	height: 1.2rem;
+	width:49%;
+	float:left;	
+	line-height: 1.2rem;
+}
+.confirm-btn{
+	font-size: 0.426666667rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	width:50%;
+	float: right;
+	color: #4395F7;
+}
+.down-img{
+	float:right;
+	width: 0.34667rem;
+	height: 0.24rem;
+	margin-top: 0.17333rem;
+	margin-right: 0.266667rem;
+}

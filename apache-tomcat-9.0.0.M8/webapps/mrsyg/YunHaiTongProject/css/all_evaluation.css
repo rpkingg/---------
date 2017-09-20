@@ -1,0 +1,132 @@
+.evaluation_container {
+	padding: 0.4rem 0.32rem;
+}
+
+.evaluation_container_reviewer {
+	height: 0.96rem;
+	position: relative;
+	line-height: 0.96rem;
+	font-size: 0.34666667rem;
+	color: #333333;
+}
+
+.evaluation_container_reviewer_pic {
+	width: 0.96rem;
+	height: 0.96rem;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.evaluation_container_reviewer_name {
+	margin-left: 1.12rem;
+}
+
+.evaluation_content_box {
+	padding-left: 1.12rem;
+}
+
+.evaluation_content {
+	color: #777777;
+	font-size: 0.34666667rem;
+}
+
+.emoji_style {
+	width: 0.42666667rem;
+	height: 0.4rem;
+}
+
+.evaluation_other_content_box {
+	font-size: 0.32rem;
+	color: #999999;
+	padding-top: 0.27333333rem;
+}
+
+.evaluation_time {
+	display: inline-block;
+}
+
+.evaluation_coloud_money_box {
+	display: inline-block;
+	padding-left: 0.42666667rem;
+}
+
+.coloud_money_img {
+	width: 0.4rem;
+	height: 0.4rem;
+}
+
+.comments_num_box {
+	display: inline-block;
+	float: right;
+}
+
+.comment_and_zan_img {
+	width: 0.42666667rem;
+	height: 0.4rem;
+	padding-right: 0.1rem;
+}
+
+.zan_num_box {
+	display: inline-block;
+	float: right;
+	/*margin-right: 0.82666667rem;*/
+	margin-right: 1rem;
+}
+
+.reply_content_box {
+	padding: 0.8rem 0.37333333rem 0.4rem 0.37333333rem;
+	border: 0.10666667rem;
+	background-image: url(../img/comment_bg.png);
+	background-size: 100% 100%;
+	background-size: cover;
+}
+.rest_reply{
+	color: #4395F7;font-size: 0.29333333rem;padding-top: 0.4rem;
+}
+.comment_goods_pic_container_out{
+	overflow: hidden;
+}
+.comment_goods_pic_container_in{
+	width: 9rem;padding-top: 0.32rem;padding-bottom: 0.1rem;
+}
+.comment_goods_pic{
+	width: 2.5rem;height: 2.5rem;margin-left: 0.2rem;
+}
+.already-zan{
+	color: #ff5959;
+}
+
+.fabulous_click_red{
+	display: none;
+}
+
+.display_none{
+	display: none;
+}
+
+.comment_all{
+	height: 1rem;
+	text-align: center;
+	margin: 0.2rem 0 0 0.5rem;
+	border: 1px;
+	border-radius: 0.09rem;
+	width: 7.3rem;
+	float: left;
+}
+
+.send_button{
+	height: 1rem;
+	width: 1.5rem;
+	background: #4395F7;
+	border: 1px;
+	border-radius: 0.08rem;
+	color: #ffffff;
+	font-size: 0.42rem;
+	float: left;
+	margin: 0.2rem 0 0 0.3rem;
+}
+
+.button_div{
+	display: none;
+	float: left;
+}

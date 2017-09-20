@@ -1,0 +1,143 @@
+.stroll_banner {
+	height: 4.69333333rem;
+}
+.stroll_banner_img{
+	height: 4.69333333rem;
+	width: 100%;
+}
+.stroll_product_list {
+	padding: 0.4rem 0.50666667rem 0.4rem 0.26666667rem;
+	height: 2.42666667rem;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.stroll_product_pic {
+	display: inline-block;
+	width: 2.42666667rem;
+	height: 2.42666667rem;
+	float: left;
+}
+
+.stroll_product_introduce {
+	display: inline-block;
+	margin-left: 0.32rem;
+	height: 2.42666667rem;
+	width: 6.34666667rem;
+	position: absolute;
+}
+
+.stroll_product_name {
+	font-size: 0.45333333rem;
+}
+
+.stroll_product_introduce_p {
+	font-size: 0.34666667rem;
+	margin-top: 0.21333333rem;
+}
+
+.stroll_product_note_pic {
+	display: inline-flex;
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+
+.stroll_product_note_num {
+	font-size: 0.29333333rem;
+	display: block;
+	padding-left: 0.61333333rem;
+	width: 2.46666667rem;
+}
+
+.stroll_product_buy_btn {
+	font-size: 0.32rem;
+	border: 1px solid #4395F7;
+	color: #4395F7;
+	border-radius: 3px;
+	padding: 0.13333333rem 0.29333333rem;
+	position: absolute;
+	top: 1.54rem;
+	right: 0;
+}
+.stroll_customer_note{
+	position: absolute;
+	left: 0;
+	bottom: 0.1rem;
+}
+
+
+
+.my-follow-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.pull-down-box {
+	margin-top: -1.46667rem;
+	width: 100%;
+	overflow: hidden;
+}
+
+.pull-down {
+	width: 0.6933333333333333rem;
+	margin: 0.2rem 0 0 4.5rem;
+}
+
+.pull-down-box.loading, .pull-up-box.loading {
+	margin-top: 0;
+}
+
+.pull-down.animate {
+	-webkit-animation: pull-down 1s infinite linear;
+}
+
+.pull-up.animate {
+	-webkit-animation: pull-up 1s infinite linear;
+}
+
+@keyframes pull-down {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes pull-down {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.pull-up-box {
+	width: 100%;
+}
+
+.pull-up {
+	width: 0.48rem;
+	margin: 0.2rem 0 0 4.5rem;
+}
+
+@keyframes pull-up {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes pull-up {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+

@@ -1,0 +1,39 @@
+html,body{
+	background-color: #efefef;
+}
+.select-address-container .goods-address-item{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 1.2rem;
+}
+.goods-address-item{
+	background-color: #fff;
+}
+.select-address-container .goods-address-item:not(:first-child){
+	margin-top: 0.8rem;
+}
+.address-user-info{
+	color: #333;
+	font-size: 1.4rem;
+}
+.address-detail-info{
+	color: #777;
+	font-size: 1.4rem;
+}
+.default-address-tip{
+	color: #4395f7;
+}
+.no_address{
+	text-align: center;margin-top: 15rem;font-size: 1.4rem;display: none;
+}
+.no_address_img{
+	width: 7rem;height: 7rem;
+}
+.no_address_content_one{
+	color: #777777;margin-top: 1.5rem;padding: 0 7rem;
+}
+.add_new_address_btn{
+	color: #108EE9;display: inline-block;border: 1px solid #108EE9;padding: 0.5rem 1.2rem;border-radius: 0.3rem;margin-top: 2.5rem;
+}

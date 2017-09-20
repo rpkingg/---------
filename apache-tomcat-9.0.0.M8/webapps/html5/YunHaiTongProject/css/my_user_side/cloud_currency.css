@@ -1,0 +1,317 @@
+.my-cloud-currency-count{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; 
+    color: #fff;
+}
+.cloud-currency-count:before{
+	content:''; 
+	border: 0.08rem dashed #fff;
+    content: "";
+    display: inline-block;
+    margin: 0 1.3rem 0.4rem 0;
+    width: 15%;
+}
+
+.cloud-currency-count:after{
+	content:'';
+	border: 0.08rem dashed #fff;
+    content: "";
+    display: inline-block;
+    margin: 0 0 0.4rem 1.3rem;
+    width: 15%;
+}
+.cloud-currency-text{
+	font-size: 6rem;
+	margin-top: 2.2rem;
+}
+.cloud-currency-count{
+	font-size: 1.3rem;
+}
+.break-line-bar{
+	background-color: #efefef;
+	padding: 0.4rem 0;
+}
+.already-sign-in-tip{
+	font-size: 1.3rem;
+	color: #999;
+}
+.already-sign-in-tip span:not(:first-child),
+.other-sign-in-tip span:not(:first-child){
+	margin-top: 0.3rem;
+}
+.already-sign-in-tip span:not(:first-child){
+	padding: 0 0 0 0.7rem;
+}
+.other-sign-in-tip span:first-child{
+	font-size: 1.3rem;
+	color: #999;
+}
+.already-sign-in-tip{
+	padding: 0 1.2rem;
+}
+.sign-in-tip-content{
+	padding: 1.2rem 0;
+}
+.other-sign-in-tip{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	padding: 0 1.2rem 0 1.9rem;
+}
+.sign-in-container{
+	padding: 2.4rem 1.5rem;
+}
+.sign-in-remind{
+	border:0.1rem solid #ddd;
+	border-radius: 10rem;
+	padding: 1rem 1.5rem;
+	-moz-box-shadow:0 0 0.1rem #ddd;
+	-webkit-box-shadow:0 0 0.1rem #ddd;
+	box-shadow: 0 0 0.1rem #ddd;
+	width: 80%;
+}
+.sign-in-day{
+	color: #eb6f55;
+    font-size: 1.6rem;
+}
+.remind-icon{
+    border-radius: 50%;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+}
+.enabled{
+	left: 0;
+	background-color: #70cf95;
+}
+.disabled{
+	right: 0;
+	background-color: #dcdcdc;
+}
+.sign-in-count{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+    align-items: center;
+}
+.sign-in-count .sign-day{
+    border-radius: 50%;
+    font-size: 1.2rem;
+    height: 3.6rem;
+    padding: 0.9rem 0;
+    width: 3.6rem;
+}
+.sign-in-count .already-sign-in{
+	background-color: #70cf95;
+    color: #fff;
+}
+.sign-in-count .current-sign-in{
+	background-color: #ffcf5b;
+    color: #fff;
+    border:0.1rem solid #ffcf5b;
+}
+.sign-in-count .no-sign-in{
+	background-color: #f1f0f0;
+    color: #ccc;
+}
+.today-sign-in-container {
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+    align-items: center;
+	margin-top: 2.4rem;
+}
+.today-sign-btn{
+	padding: 1rem 0;
+	background-color: #70cf95;
+	color: #fff;
+	font-size: 1.4rem;
+	border-radius: 10rem;
+}
+.plus-cloud-currency{
+	font-size: 1.4rem;
+	color: #999;
+}
+.cloud-currency-detail-title,.exchange-coupons-title{
+	font-size: 1.5rem;
+	color: #777;
+}
+.cloud-currency-detail-content{
+	border-bottom: 0.1rem solid #ddd;
+	padding: 0 1.2rem;
+}
+.cloud-currency-detail-item,.cloud-currency-use-detail{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+    align-items: center;
+	font-size: 1.3rem;
+}
+.cloud-currency-detail-item{
+	padding: 1.2rem 1.2rem 1.2rem 0.5rem;
+	color: #333;
+}
+.cloud-currency-detail-content .cloud-currency-detail-item:not(:last-child){
+	border-bottom: 0.1rem solid #ddd;
+}
+.cloud-currency-use-detail .cloud-currency-value{
+	font-size: 1.5rem;
+	margin-left: 0.8rem;
+	color: #f7c00e;
+}
+.cloud-currency-icon{
+   height: 1.8rem;
+   width: 1.8rem;
+   fill: currentColor;
+}
+.cloud-currency-use-detail{
+	justify-content: flex-end;
+}
+.exchange-coupons-content{
+	padding: 0 1.2rem 1.5rem;
+}
+.coupons-count .amount-text{
+	font-size: 2.8rem;
+	margin-right: 0.8rem;
+}
+.cloud-currency-count{
+	padding: 1.4rem 0;
+}
+.coupons-count{
+	padding: 0.2rem 0;
+	border-bottom:0.1rem dashed #ddd;
+}
+.exchange-coupons-item{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #fff;
+	border: 0.1rem solid #ddd;
+    margin: 1.5rem 0 0;
+}
+.amount-right-top-icon,.amount-right-bottom-icon,
+.amount-right-top-shadow,.amount-right-bottom-shadow{
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.amount-right-top-icon{
+    right: -1rem;
+    top: -1rem;
+}
+.amount-right-top-shadow{
+    right: -1rem;
+    top: -1.4rem;
+}
+.amount-right-top-icon,.amount-right-bottom-icon{
+    border:0.1rem solid #ddd;
+}
+.amount-right-bottom-icon{
+	right: -1rem;
+    bottom: -1rem;
+}
+.amount-right-bottom-shadow{
+	right: -1rem;
+    bottom: -1.4rem;
+}
+.today-sign-btn:active{
+	background-color: rgba(112,207,149,0.8);
+}
+.exchange-coupons-item:active{
+	background-color:#fafafa;
+}
+.current-sign-in-container{
+	padding: 0.1rem;
+	border:0.1rem solid #ffcf5b;
+	border-radius: 50%;
+}
+.exchange-coupons-tip-cont,.cloud-currency-detail-title{
+	padding:0.9rem 1.2rem;
+	background-color: #efefef;
+}
+.exchange-coupons-tip-cont,.exchange-coupons-tip{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+    align-items: center;
+}
+.exchange-coupons-tip{
+	justify-content:flex-end;
+}
+.exchange-coupons-tip-text{
+	font-size: 1.2rem;
+	color: #999;
+}
+.exchange-coupons-tip .icon-rectangle1{
+	color: #999;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.exchange-coupons-item .voucher-amount{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	padding:1rem 0;
+	border-right: 0.1rem dashed #ddd;
+}
+.exchange-coupons-item .voucher-use-condition{
+	align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 0 1.8rem 3rem;
+}
+
+.voucher-amount-attr{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:baseline;
+}
+
+.voucher-amount-attr span{
+	font-size: 1.2rem;
+	color: #FF5959;
+}
+.voucher-amount .yuan{
+	font-size: 1.5rem;
+}
+.voucher-amount .amount-text{
+	font-size: 4.1rem;
+}
+.full-amount-tip{
+	color: #777;
+	font-size: 1.2rem;
+	padding: 0 0 1.3rem;
+}
+.used-store-name,.use-endline{
+	font-size: 1.3rem;
+	color: #333;
+}
+.use-endline{
+	margin-top: 0.4rem;
+}
+.exchange-count-container{
+	margin-top: 1.2rem;
+}
+.exchange-count-text{
+	border:0.1rem solid #FF5959;
+	padding: 0.4rem 1rem;
+	color: #FF5959;
+	border-radius: 0.3rem;
+	font-size: 1.4rem;
+}

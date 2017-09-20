@@ -1,0 +1,27 @@
+.relative_logo_container{
+	text-align: center;margin-top: 0.96rem;
+}
+.relative_logo_img_container{
+	border: 1px solid #CCCCCC;display: inline-block;padding: 0.21333333rem 0.34666667rem;border-radius: 0.4rem;
+}
+.relative_logo_img_container img{
+	width: 1.97333333rem;height: 2.24rem;
+}
+.relative_version{
+	color: #777777;font-size: 0.42666667rem;margin-top: 0.4rem;
+}
+.evaluate_brief_introduction{
+	color: #333333;font-size: 0.42666667rem;margin-top: 1.52rem;position: relative;
+}
+.relative_evaluate{
+	border-top: 1px solid #DDDDDD;padding: 0.4rem 0 0.4rem 0.69333333rem;
+}
+.relative_evaluate img{
+	width: 0.24rem;height: 0.48rem;position: absolute;right: 0.45333333rem;top: 0.5rem;
+}
+.relative_brief_introdution{
+	border-top: 1px solid #DDDDDD;padding: 0.4rem 0 0.4rem 0.69333333rem;border-bottom: 1px solid #DDDDDD;
+}
+.relative_brief_introdution img{
+	width: 0.24rem;height: 0.48rem;position: absolute;right: 0.45333333rem;top: 2rem;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>找潮货-首页</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css" />
+		<link rel="stylesheet" href="css/common_css/public_style.css" />
+		<link rel="stylesheet" href="css/common_css/swiper.min.css" />
+		<link rel="stylesheet" href="css/common/mui.css" />
+		<link rel="stylesheet" href="css/common/mui.picker.css" />
+		<link rel="stylesheet" href="css/stroll_find_goods.css" />
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common/mui.min.js"></script>
+		<script type="text/javascript" src="js/common/mui.picker.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper stroll_banner_img">
+				<!--<div class="swiper-slide stroll_banner">
+					<img class="stroll_banner_img" src="img/shop_pic@2x.png" srcset="img/shop_pic@2x.png 2x,img/shop_pic@3x.png 3x" />
+				</div>
+				<div class="swiper-slide stroll_banner">
+					<img class="stroll_banner_img" src="img/shop_pic@2x.png" srcset="img/shop_pic@2x.png 2x,img/shop_pic@3x.png 3x" />
+				</div>
+				<div class="swiper-slide stroll_banner">
+					<img class="stroll_banner_img" src="img/shop_pic@2x.png" srcset="img/shop_pic@2x.png 2x,img/shop_pic@3x.png 3x" />
+				</div>-->
+			</div>
+			<!--分页器-->
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="margin_top_six" id="stroll_product_lists">
+			<div class="stroll_product_list background_color_FF">
+				<img class="stroll_product_pic" src="" />
+				<div class="stroll_product_introduce">
+					<div class="stroll_product_name">苹果iPhone 7</div>
+					<!--<div class="stroll_product_introduce_p two_line_font">果粉必备红色特别版 中国移动电信联通全网通 最低价</div>-->
+					<div class="stroll_customer_note">
+						<img class="stroll_product_note_pic" src="img/note_icon@2x.png" />
+						<p class="stroll_product_note_num">用户笔记24篇</p>
+					</div>
+					<a class="stroll_product_buy_btn">选购</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+	<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+	<script type="text/javascript" src="js/common_js/swiper.min.js"></script>
+	<script type="text/javascript ">
+		(function($, document) {
+			mui.init({
+				pullRefresh : {
+					container:'.swiper-container',//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+					up : {
+						height:50,//可选.默认50.触发上拉加载拖动距离
+						auto:true,//可选,默认false.自动上拉加载一次
+						contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+						contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+						callback :pullupRefresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+					}
+				}
+			});
+
+			//加载更多
+			var pageSize = 3;//默认请求条数
+			var counter = 1;//计数器
+			var pageStart = 0;//开始数据条数
+			var Flag=true;
+			var urlPath_two = "mrsyg/kqgoods/FashionGoods.form";
+			var need_data_two = {
+				"pag_no": "1",
+				"pag_num": "100"
+			};
+			var data_two = myAjax(urlPath_two, need_data_two);
+			if(data_two != undefined) {
+				init2(data_two);
+			}
+			function init2(data) {
+				$.each(data.goodsinfo, function(index, getData) {
+					var fashion_picture = getData.fashion_picture;
+					var fashion_picture2x = getDifferencePic(fashion_picture, "2x_");
+					var fashion_picture3x = getDifferencePic(fashion_picture, "3x_");
+					var product_id = getData.product_id;
+					var fashion_name = getData.fashion_name;
+					var note_sum = getData.note_sum;
+					var needString = '<div class="stroll_product_list background_color_FF" id="'+product_id+'">' +
+							'<img class="stroll_product_pic" src="' + fashion_picture2x + '" srcset="' + fashion_picture2x + ' 2x,' + fashion_picture3x + ' 3x"/>' +
+							'<div class="stroll_product_introduce">' +
+							'<div class="stroll_product_name">' + fashion_name + '</div>' +
+							'<div class="stroll_customer_note">' +
+							'<img class="stroll_product_note_pic" src="img/note_icon@2x.png"/>' +
+							'<p class="stroll_product_note_num">用户笔记' + note_sum + '篇</p>' +
+							'</div>' +
+							'<a class="stroll_product_buy_btn">选购</a>' +
+							'</div>' +
+							'</div>';
+					$(needString).appendTo("#stroll_product_lists");
+				});
+			}
+			function pullupRefresh() {
+				setTimeout(function () {
+					mui('.swiper-container').pullRefresh().endPullupToRefresh((Flag)); //参数为true代表没有更多数据了。
+					init2();
+				}, 1500);
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			//接口路径(广告位)
+			var urlPath_one = "mrsyg/kqgoods/FashionAdvertise.form";
+			var need_data_one = {};
+			var data_one = myAjax(urlPath_one, need_data_one);
+			if(data_one != undefined) {
+				init(data_one);
+			}
+			//接口路径(商品)
+			//http://120.76.190.223:8988/mrsyg/kqgoods/FashionGoods.form?pag_no=1&pag_num=100
+			var urlPath_two = "mrsyg/kqgoods/FashionGoods.form";
+			var need_data_two = {
+				"pag_no": "1",
+				"pag_num": "100"
+			};
+			var data_two = myAjax(urlPath_two, need_data_two);
+			if(data_two != undefined) {
+				init2(data_two);
+			}
+		
+			function init(data) {
+				$.each(data.advertiseinfo, function(index, getData) {
+					var banner_pic = getData.advertise_picture;
+					var banner_pic_id = getData.advertise_id;
+					var needString = '<div class="swiper-slide stroll_banner">' +
+						'<img class="stroll_banner_img" id="' + banner_pic_id + '" src="' + banner_pic + '" srcset="" />' +
+						'</div>';
+					$(needString).appendTo(".swiper-wrapper");
+				});
+				loadSwiper("swiper-container", "swiper-pagination");
+			}
+			
+			function init2(data) {
+				$.each(data.goodsinfo, function(index, getData) {
+					var fashion_picture = getData.fashion_picture;
+					var fashion_picture2x = getDifferencePic(fashion_picture, "2x_");
+					var fashion_picture3x = getDifferencePic(fashion_picture, "3x_");
+					var product_id = getData.product_id;
+					var fashion_name = getData.fashion_name;
+					var note_sum = getData.note_sum;
+					var needString = '<div class="stroll_product_list background_color_FF" id="'+product_id+'">' +
+						'<img class="stroll_product_pic" src="' + fashion_picture2x + '" srcset="' + fashion_picture2x + ' 2x,' + fashion_picture3x + ' 3x"/>' +
+						'<div class="stroll_product_introduce">' +
+						'<div class="stroll_product_name">' + fashion_name + '</div>' +
+						'<div class="stroll_customer_note">' +
+						'<img class="stroll_product_note_pic" src="img/note_icon@2x.png"/>' +
+						'<p class="stroll_product_note_num">用户笔记' + note_sum + '篇</p>' +
+						'</div>' +
+						'<a class="stroll_product_buy_btn">选购</a>' +
+						'</div>' +
+						'</div>';
+					$(needString).appendTo("#stroll_product_lists");
+				});
+			}
+
+			//事件委托，解决给后来添加的DOM元素添加绑定事件
+			$("body").on("click", ".stroll_banner", function() {
+				alert("事件委托");
+			});
+
+		})(jQuery, document);
+	</script>
+
+</html>

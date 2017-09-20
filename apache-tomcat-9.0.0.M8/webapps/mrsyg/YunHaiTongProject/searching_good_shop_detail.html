@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>寻好店-详情</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css" />
+		<link rel="stylesheet" href="css/common_css/public_style.css" />
+		<link rel="stylesheet" href="css/searching_good_shop_detail.css" />
+		<link rel="stylesheet" href="css/common_css/swiper.min.css" />
+		<link rel="stylesheet" href="css/common_css/mui.min.css">
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-table-view mui-table-view-chevron">
+
+				</div>
+			</div>
+		</div>
+		<!--点击品牌的弹出层-->
+	</body>
+	<script src="js/common_js/mui.js"></script>
+	<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+	<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+	<script type="text/javascript" src="js/common_js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/searching_good_shop_detail.js"></script>
+	<script type="text/javascript">
+		//下拉刷新上拉加载
+		mui.init({
+			pullRefresh: {
+				container: '#pullrefresh',
+				down: {
+					callback: pulldownRefresh
+				},
+				up: {
+					contentrefresh: '正在加载...',
+					callback: pullupRefresh
+				}
+			}
+		});
+		/**
+		 * 下拉刷新具体业务实现
+		 */
+		function pulldownRefresh() {
+			setTimeout(function() {
+				var table = document.body.querySelector('.mui-table-view');
+				var cells = document.body.querySelectorAll('.mui-table-view-cell');
+				for(var i = cells.length, len = i + 3; i < len; i++) {
+					var li = document.createElement('li');
+					li.className = 'mui-table-view-cell';
+					li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+					//下拉刷新，新纪录插到最前面；
+					table.insertBefore(li, table.firstChild);
+				}
+				mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+			}, 1500);
+		}
+		var count = 0;
+		/**
+		 * 上拉加载具体业务实现
+		 */
+		function pullupRefresh() {
+			setTimeout(function() {
+				mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+				var table = document.body.querySelector('.mui-table-view');
+				var cells = document.body.querySelectorAll('.mui-table-view-cell');
+				for(var i = cells.length, len = i + 20; i < len; i++) {
+					var li = document.createElement('li');
+					li.className = 'mui-table-view-cell';
+					li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+					table.appendChild(li);
+				}
+			}, 1500);
+		}
+		if(mui.os.plus) {
+			mui.plusReady(function() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().pullupLoading();
+				}, 1000);
+
+			});
+		} else {
+			mui.ready(function() {
+				mui('#pullrefresh').pullRefresh().pullupLoading();
+			});
+		}
+
+		//图片滑动
+		var swiper = new Swiper('.swiper-container1', {
+			direction: 'horizontal',
+			loop: true,
+			observer: true, //修改swiper自己或子元素时，自动初始化swiper
+			observeParents: true, //修改swiper的父元素时，自动初始化swiper
+			speed: 300,
+			autoplay: 2000, //自动切换的时间间隔
+			paginationClickable: true, //拖动Swiper时阻止click事件
+			//分页器
+			pagination: '.swiper-p1',
+			centeredSlides: true, //设定为true时，活动块会居中，而不是默认状态下的居左
+			autoplayDisableOnInteraction: false //用户操作swiper之后，是否禁止autoplay，设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay
+		});
+
+		var swiper2 = new Swiper('.swiper-container2', {
+			direction: 'horizontal',
+			loop: true,
+			observer: true, //修改swiper自己或子元素时，自动初始化swiper
+			observeParents: true, //修改swiper的父元素时，自动初始化swiper
+			speed: 300,
+			autoplay: 2000, //自动切换的时间间隔
+			paginationClickable: true, //拖动Swiper时阻止click事件
+			//分页器
+			pagination: '.swiper-p2',
+			centeredSlides: true, //设定为true时，活动块会居中，而不是默认状态下的居左
+			autoplayDisableOnInteraction: false //用户操作swiper之后，是否禁止autoplay，设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay
+		});
+	</script>
+
+</html>

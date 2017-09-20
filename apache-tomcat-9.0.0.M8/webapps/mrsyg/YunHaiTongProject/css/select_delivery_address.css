@@ -1,0 +1,44 @@
+.new_address{
+	color: #4395F7;font-size: 0.37333333rem;position: absolute;right: 0.4rem;
+}
+.input_your_adress{
+	height: 1.44rem;position: relative;background-color: #FFFFFF;
+}
+.input_your_adress_bg{
+	width: 9.4rem;height: 0.88rem;position: absolute;left: 0.3rem;top: 0.28rem;
+}
+.input_your_adress_input{
+	font-size: 0.34666667rem;width: 8.5rem;z-index: 99;position: absolute;padding: 0.21333333rem 0;left: 1.1rem;top: 0.3rem;background-color: #EFEFEF;
+}
+.input_your_adress_img{
+	width: 0.34666667rem;height: 0.42666667rem;z-index: 99;position: absolute;left: 0.58666667rem;top: 0.52rem;
+}
+.my_delivery_address{
+	color: #999999;font-size: 0.34666667rem;padding: 0.32rem 0 0.32rem 0.32rem;
+}
+.some_address{
+	background-color: #FFFFFF;color: #333333;font-size: 0.37333333rem;padding:0.32rem 0 0.32rem 0.32rem;
+}
+.current_delivery_address{
+	background-color: #FFFFFF;color: #333333;font-size: 0.37333333rem;padding:0.32rem 0 0.32rem 0.32rem;position: relative;
+}
+.current_delivery_address_img{
+	width: 0.50666667rem;height: 0.50666667rem;position: absolute;right: 1.98rem;top: 0.34rem;
+}
+.reposition{
+	color: #4395F7;position: absolute;right: 0.4rem;
+}
+.nearby_address{
+	background-color: #FFFFFF;color: #777777;font-size: 0.37333333rem;padding:0.32rem 0 0.32rem 0.32rem;
+}
+input::-webkit-input-placeholder {
+				color: #999999;
+			}
+
+.choose_yes{
+	width: 0.426667rem;
+	height: 0.32rem;
+	float: right;
+	margin: 0.1rem 0.453333rem 0 0;
+	display: none;
+}

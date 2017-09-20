@@ -1,0 +1,21 @@
+.check_sheet_container{
+	height: 1.6rem;position: relative;border-bottom: 1px solid #DDDDDD;
+}
+.check_sheet_adviser_pic{
+	width: 1.09333333rem;height: 1.09333333rem;position: absolute;left: 0.32rem;top: 0.26666667rem;border-radius: 50%;
+}
+.adviser_name_shop_container{
+	display: inline-block;position: absolute;height: 1.6rem;left: 1.76rem;
+}
+.adviser_name{
+	color: #333333;font-size: 0.42666667rem;position: absolute;top: 0.32rem;
+}
+.adviser_shop_name{
+	color: #999999;font-size: 0.34666667rem;position: relative;top: 0.9rem;
+}
+.check_check{
+	display: inline-block;color: #4395F7;font-size: 0.32rem;border: 1px solid #4395F7;border-radius: 0.10666667rem;padding: 0.10666667rem 0.56rem;position: absolute;top: 0.42rem;right: 0.32rem;
+}
+.check_sheet{
+	display: inline-block;color: #70CF95;font-size: 0.32rem;border: 1px solid #70CF95;border-radius: 0.10666667rem;padding: 0.10666667rem 0.56rem;position: absolute;top: 0.42rem;right: 0.32rem;
+}

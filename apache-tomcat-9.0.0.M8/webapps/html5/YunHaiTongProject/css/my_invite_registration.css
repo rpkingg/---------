@@ -1,0 +1,44 @@
+.invite_adviser {
+	text-align: center;
+	margin-top: 2.53333333rem;
+}
+
+.invite_adviser_img {
+	width: 1.6rem;
+	height: 1.6rem;
+}
+
+.invite_adviser_name {
+	text-align: center;
+	color: #333333;
+	font-size: 0.45333333rem;
+	margin-top: 0.18666667rem;
+}
+
+.invite_adviser_shop {
+	text-align: center;
+	color: #777777;
+	font-size: 0.32rem;
+	margin-top: 0.21333333rem;
+}
+
+.invite_qr_container {
+	text-align: center;
+	margin-top: 0.98666667rem;
+}
+
+.invite_qr_container_img {
+	width: 4.93333333rem;
+	height: 4.93333333rem;
+}
+
+.invite_des {
+	color: #777777;
+	font-size: 0.29333333rem;
+	margin-top: 0.42666667rem;
+	text-align: center;
+}
+.customer_invite_qr_container {
+	text-align: center;
+	margin-top: 0.7rem;
+}

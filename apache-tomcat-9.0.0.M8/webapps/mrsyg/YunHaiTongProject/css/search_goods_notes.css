@@ -1,0 +1,45 @@
+.search_title_container{
+	height: 1rem;line-height: 1rem;font-size: 0.37333333rem;position: relative;
+}
+.serach_type_name{
+	color: #333333;padding-left: 0.32rem;
+}
+.check_more{
+	color: #999999;font-size: 0.29333333rem;position: absolute;right: 0.85rem;
+}
+.check_more_btn{
+	width: 0.34666667rem;height: 0.34666667rem;position: absolute;right: 0.37333333rem;top: 0.3rem;
+}
+.notes_container{
+	height: 1.86666667rem;padding-left: 0.32rem;padding-right: 0.4rem;
+}
+.note_name{
+	color: #333333;font-size: 0.37333333rem;padding-top: 0.4rem;width: 8rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+}
+.note_author_container{
+	font-size: 0.32rem;padding-top: 0.1rem;
+}
+.note_author_pic{
+	width: 0.50666667rem;height: 0.50666667rem;
+}
+.note_author_name{
+	color: #333333;font-size: 0.24rem;display: inline-block;padding-left: 0.21333333rem;position: relative;top: 0.01rem;
+}
+.note_publish_date{
+	color: #777777;display: inline-block;float: right;
+}
+.goods_container{
+	height: 2.13333333rem;padding: 0.4rem 0.4rem 0.4rem 0.32rem;
+}
+.good_img{
+	width: 2.13333333rem;height: 2.13333333rem;
+}
+.good_information_container{
+	display: inline-block;font-size: 0.37333333rem;height: 2.13333333rem;position: absolute;padding-left: 0.29333333rem;
+}
+.good_name{
+	color: #333333;padding-top: 0.2rem;
+}
+.good_price{
+	color: #FF5959;font-size: 0.42666667rem;padding-top: 0.5rem;
+}

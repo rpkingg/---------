@@ -1,0 +1,387 @@
+html {
+    font-size: 10px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: "HiraginoSansGB_W3";
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+}
+
+img {
+    display: block;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+.fixed_head {
+    width: 100%;
+    position: fixed;
+    height: 2.8rem;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: #E6E6E6;
+}
+
+.search_container * {
+    position: relative;
+}
+
+.search_container {
+    overflow: hidden;
+}
+
+.search_box {
+    float: right;
+    overflow: hidden;
+    width:  10rem;
+    height: 1.52rem;
+    background-color: #ffffff;
+}
+
+.product_container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2.8rem;
+}
+
+.car_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+}
+
+.car_container .goods_item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-bottom: 0.34667rem;
+}
+
+.car_container .goods_item .top_box .shop_order .row1 {
+    overflow: hidden;
+    margin-top: 0.05333rem;
+    margin-bottom: 0.34667rem;
+}
+
+.car_container .goods_item .top_box .shop_order .row1 .more {
+    display: block;
+    width: 0.18667rem;
+    height: 0.33333rem;
+    float: left;
+    margin-left: 0.21333rem;
+    margin-top: 0.05333rem;
+}
+
+.car_container .goods_item .top_box .shop_order .row2 {
+    overflow: hidden;
+}
+
+.car_container .goods_item .bottom_box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.car_container .goods_item .bottom_box .good {
+    position: relative;
+    overflow: hidden;
+    padding: 0.48rem 0.49333rem 0.48rem 0.45333rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.car_container .goods_item .bottom_box .good .good_photo {
+    position: relative;
+    /*width: 1.78667rem;*/
+    float: left;
+    margin-left: 0.21333rem;
+    margin-right: 0.30667rem;
+}
+
+.car_container .goods_item .bottom_box .good .good_info {
+    overflow: hidden;
+}
+
+.car_container .goods_item .bottom_box .good .good_info .row1 {
+    width: 100%;
+    /*height: 0.77333rem;*/
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+}
+
+.car_container .goods_item .bottom_box .good .good_info .row1 .good_name {
+    width: 3.8rem;
+    line-height: 0.6rem;
+    text-align: left;
+    float: left;
+    color: #777777;
+    font-size: 0.32rem;
+}
+
+.car_container .goods_item .bottom_box .good .good_info .row2 {
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+}
+
+.row2_text {
+    color: #333333;
+    font-size: 0.37333333rem;
+    line-height: 0.46666667rem;
+    padding-left: 5.48rem;
+    padding-top: 0.14rem;
+}
+
+.pay_phone_way {
+    float: left;
+    width: 7.06rem;
+    line-height: 0.46666667rem;
+    color: #777777;
+    font-size: 0.32rem;
+    text-align: left;
+    border-radius: 0.2rem;
+    /*margin_left: 0.5rem;*/
+}
+
+.inquiry_header_div{
+    font-size: 0.34666667rem;
+    color: #777777;
+    margin-left: 0.32rem;
+    margin-top: 0.42666667rem;
+    float: left;
+}
+
+.line_top{
+    margin-top: 0.42666667rem;
+}
+
+.pay_phone_title{
+    font-size: 0.34666667rem;
+    margin-left: 0.32rem;
+}
+
+.pay_phone_num{
+    border: 0;
+    height: 0.426666667rem;
+    line-height: 0.426666667rem;
+    font-size: 0.48rem;
+}
+
+.pay_phone_img{
+    height: 1.76rem;
+    width: 1.76rem;
+    margin-top: 0.4rem;
+}
+
+.pay_phone_text{
+    font-size: 0.42666667rem;
+    color: #333333;
+    padding-left: 2.266667rem;
+    margin-top: 0.82666667rem;
+    width: 3.946667rem;
+}
+
+.pay_phone_money{
+    font-size: 0.37333333rem;
+    float: right;
+    margin-top:-0.42rem;
+    margin-right: 0.48rem;
+}
+
+.goods_total{
+    font-size: 0.32rem;
+    margin-top: 0.04666667rem;
+    float: right;
+    color: #777777;
+}
+
+.goods_voucher{
+    float: right;
+    font-size: 0.32rem;
+    margin-top: 0.04666667rem;
+    color: #777777;
+}
+
+.payment_required{
+    background-color: #FFFFFF;
+    height: 1.26666667rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.payment_text{
+    color: #333333;
+    font-size: 0.32rem;
+    margin-left: 0.48rem;
+    margin-top: 0.45333333rem;
+}
+
+.payment_money{
+    float: right;
+    font-size: 0.34666667rem;
+    margin-top: 0.45333333rem;
+    color: #FF5959;
+    margin-right: 0.48rem;
+}
+
+/*滚动条哼竖屏隐藏类*/
+.slide{
+    overflow: hidden;
+}
+
+/*底部支付*/
+.footer_pay{
+    height: 1.30666667rem;
+    bottom: 0;position: fixed;
+    width: 10rem;
+}
+
+.footer_pay_text{
+    color: #777777;
+    font-size: 0.37333333rem;
+    margin-left: 1.54666667rem;
+    width: 1.62666667rem;
+    margin-top: 0.45333333rem;
+    float: left;
+    line-height: 0.46666667rem;
+    text-align: left;
+}
+
+.footer_pay_money{
+    float: left;
+    margin-right: 0;
+    font-size: 0.4rem;
+    margin-top: 0.45333333rem;
+    color: #FF5959;
+}
+
+.footer_pay_now{
+    background-color: #FF5959;
+    color: #FFFFFF;
+    width: 4.2933333rem;
+    font-size: 0.42666667rem;
+    text-align: center;
+    float: right;
+    height: 1.30666667rem;
+    line-height: 1.30666667rem;
+}
+
+/*支付弹窗*/
+.notice-pay{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index: 9999;
+    display: none;
+}
+.notice-pay .shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.chose-pay{
+    width:100%;
+    height:1.33rem;
+    line-height:1.33rem;
+    position: relative;
+    z-index: 9999;
+    background: #FFFFFF;
+    border-bottom:1px solid #e5e5e5;
+    text-align: center;
+}
+
+.chose-pay>img{
+    width: 0.37rem;
+    height: 0.37rem;
+    position: absolute;
+    top: 0.48rem;
+    left: 4.8%;
+}
+
+.chose-pay>span{
+    font-size:0.48rem;
+    color: #333333;
+    display: block;
+}
+
+.pay-content{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+.pay-wechat{
+    width:100%;
+    height:1.4rem;
+    line-height:1.4rem;
+    font-size:0.4rem;
+    /*border-top:1px solid #e5e5e5;*/
+    border-bottom:1px solid #e5e5e5;
+    background:#ffffff;
+    color: #333333;
+    position: relative;
+}
+
+.pay-center{
+    text-align: center;
+}
+
+.pay-wechat-span{
+    color:#ff5959;
+}
+
+.pay-AliPay{
+    width:100%;
+    height:1.4rem;
+    line-height:1.4rem;
+    font-size:0.4rem;
+    /*border-bottom:1px solid #e5e5e5;*/
+    background:#ffffff;
+    color: #333333;
+    position: relative;
+}
+.brand{
+    width:0.8rem;
+    height:0.8rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3.5% 0 4.5%;
+}
+
+.chose{
+    position: absolute;
+    top: 0.45rem;
+    right: 0.53rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    display: none;
+}
+
+.cancel-pay{
+    width:100%;
+    height:1.4rem;
+    line-height:1.4rem;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size:0.4rem;
+    position: relative;
+    z-index: 9999;
+    background-color:#ff5959
+}

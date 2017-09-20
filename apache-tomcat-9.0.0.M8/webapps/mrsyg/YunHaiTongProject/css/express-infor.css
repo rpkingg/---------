@@ -1,0 +1,144 @@
+body{
+	background: #efefef;
+}
+.clear{ clear:both} 
+
+.charge-title{
+	position: relative;
+    text-align: center;
+    font-size: 0.42666666667rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDD;
+ } 	
+ .title-back{
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    height: 1.2rem; 	
+    background: url(../img/back_btn@3x.png) center center no-repeat;
+    background-size: .24rem .45333rem;
+ }
+ .expressor-wrapper{
+ 	margin: .2rem 0;
+ 	background: #fff;
+ 	height: 1.46666rem;
+ 	padding-top: .5333rem;
+ }
+ 
+ .expressor-wrapper img{
+ 	float: left;
+ 	margin-left: .4rem;
+ 	margin-right: .5333rem;
+ 	width: .93333rem;
+ }
+.expressor-infor{
+ 	float: left;
+ 	width: 7.9rem;
+ }
+.expressor-infor p{
+    font-size: .32rem;
+    height: .32rem;
+    line-height: .32rem;
+    padding-bottom: .266667rem;
+ 	width: 7.9rem;
+ }
+.expressor-infor p span{
+   color: #777;
+   margin-right: .2rem;
+ }
+.expressor-infor p em{
+   color: #333;
+   font-style: normal;
+   font-weight: normal;
+ }
+.expressor-infor p b{
+   color: #333;
+   margin-left: .5333rem;
+   font-style: normal;
+   font-weight: normal;
+ }
+.express-track{
+	padding-top: .4rem;
+	padding-left: .4rem;
+	background: #fff;
+}
+.express-track h5{
+	font-size: .32rem;
+    height: .32rem;
+    line-height: .32rem;
+    color: #000;
+}
+.express-track h5{
+	font-size: .32rem;
+    height: .32rem;
+    line-height: .32rem;
+    color: #000;
+    padding-bottom: .9333rem;
+}
+.track-time{
+	color: #777;
+	font-size: .29333rem;
+	height: .29333rem;
+	line-height: .2933rem;
+}
+.track-mes{
+    color: #000;
+	font-size: .29333rem;
+	height: .29333rem;
+	line-height: .2933rem;
+	padding-bottom: .4rem;
+}
+.track-sending-mes{
+    color: #000;
+	font-size: .29333rem;
+	padding-bottom: .4rem;
+	line-height: .45333rem;
+}
+.track-sending-mes span{
+    color: #4395f7;
+}
+.first-track{
+	height: 1.7333rem;
+	padding-left: .8rem;
+	background: url(../img/first-track.png) .2rem .106667rem no-repeat;
+	background-size: .13333rem auto;
+}
+.normal-track{
+	height: 1.7333rem;
+	padding-left: .8rem;
+	background: url(../img/normal-track.png) .2rem .106667rem no-repeat;
+	background-size: .13333rem auto;
+}
+.sending-track{
+	height: 2.6667rem;
+	padding-left: .8rem;
+	background: url(../img/sending-track.png) .2rem .106667rem no-repeat;
+	background-size: .13333rem auto;
+}
+.end-track{
+	height: 1.7333rem;
+	padding-left: .8rem;
+	background: url(../img/end-track.png) .2rem .106667rem no-repeat;
+	background-size: .13333rem auto;
+}
+.end-track p{
+	color: #ff5959!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

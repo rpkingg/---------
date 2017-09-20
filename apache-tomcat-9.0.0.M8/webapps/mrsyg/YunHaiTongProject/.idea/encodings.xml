@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/addOrEdit_address.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/adviser_personal_data.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/all_evaluation_goods.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/all_evaluation_note.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/all_praise.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/buy_buy.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/check_sheet.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud_currency.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/collect_notes_goods_shop.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/coupon_center.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/css/common_css/public_style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/css/dxt.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/css/searching_good_shop.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/css/searching_good_shop_detail.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/customer_qr_code.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/daily_reds.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exchange_coupons.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exchange_coupons_detail.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/goods_detail.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hot_goods.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/buy_buy/hot_goods.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/buy_buy/new_listed.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/buy_buy/time_buy.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/common_js/mui.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/common_js/mui.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/common_js/my_tools.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/daily_reds.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/find_goods/goods_detail.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/find_goods/sure_order_from_shopping_cart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/my_shopping_car.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/cloud_currency.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/collect_goods.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/collect_notes.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/collect_stores.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/exchange_coupons.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/exchange_coupons_detail.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/pay_phone_bill.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/pay_the_phone_bill.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/searching_good_shop.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/searching_good_shop_detail.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/stroll_find_goods.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/look_index.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/my_liked_user.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/my_order.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/my_order_details.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/new_listed.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/pay_phone_bill.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/pay_the_phone_bill.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/searching_good_shop.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/searching_good_shop_detail.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/select_delivery_address.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/select_vouchers.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/set_relative.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/share_coupons.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stroll_find_goods.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/time_buy.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/页面名称.txt" charset="GBK" />
+  </component>
+</project>

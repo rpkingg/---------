@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html;charset=GBK" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>查询订单</title>
+		<link rel="stylesheet" href="css/common_css/initialization_style.css" />
+		<link rel="stylesheet" href="css/common_css/public_style.css" />
+		<link rel="stylesheet" href="css/order_inquiry.css">
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/common_js/set_fontsize.js"></script>
+	</head>
+
+	<body>
+		<div class="fixed_head">
+			<div>
+				<div class="title_content">查询订单</div>
+				<img class="title_back" src="img/back_btn@2x.png" srcset="img/back_btn@2x.png 2x,img/back_btn@3x.png 3x" />
+			</div>
+
+			<div class="search_container">
+				<div class="search_box">
+					<div class="search_margin_box">
+						<div class="input_info">
+							<img class="ic_search" src="img/selected_gray@2x.png" srcset="img/selected_gray@2x.png 2x , img/selected_gray@3x.png 3x" alt="">
+							<div class="search_info">订单号</div>
+						</div>
+						<input class="search_input" type="text">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="product_container">
+			<div class="car_container">
+				<div class="goods_item">
+					<div class="bottom_box">
+						<div class="inquiry_header_div">
+							订单号 12457842121
+						</div>
+						<div class="inquiry_header_div1">
+							顾客 王小虎
+						</div>
+						<div class="line_vertical"></div>
+						<div class="inquiry_header_div2">
+							<img class="edit_img" src="img/edit_btn@2x.png" srcset="img/edit_btn@2x.png 2x, img/edit_btn@3x.png 3x" alt="">
+						</div>
+						<div class="line_all line_top"></div>
+						<div class="good">
+							<div class="good_photo">
+								<img class="goods_img" src="img/product_pic@2x.png" srcset="img/product_pic@2x.png 2x, img/product_pic@3x.png 3x" alt="">
+							</div>
+							<div class="good_info">
+								<div class="row1">
+									<div class="good_name">Apple iPhone 7</div>
+									<div class="row2_text">￥5688</div>
+								</div>
+								<div class="row2">
+									<div class="good_classify">红色 32G 移动版 套餐一</div>
+								</div>
+								<div class="product_num">×1</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="good">
+							<div class="good_photo">
+								<img class="goods_img" src="img/product_pic@2x.png" srcset="img/product_pic@2x.png 2x, img/product_pic@3x.png 3x" alt="">
+							</div>
+							<div class="good_info">
+								<div class="row1">
+									<div class="good_name">Apple iPhone 7</div>
+									<div class="row2_text">￥5688</div>
+								</div>
+								<div class="row2">
+									<div class="good_classify">红色 32G 移动版 套餐一</div>
+								</div>
+								<div class="product_num">×1</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="goods_item">
+					<div class="bottom_box">
+						<div class="inquiry_header_div">
+							订单号 12457842121
+						</div>
+						<div class="inquiry_header_div1">
+							顾客 王小虎
+						</div>
+						<div class="line_vertical"></div>
+						<div class="inquiry_header_div2">
+							<img class="edit_img" src="img/edit_btn@2x.png" srcset="img/edit_btn@2x.png 2x, img/edit_btn@3x.png 3x" alt="">
+						</div>
+						<div class="line_all line_top"></div>
+						<div class="good">
+							<div class="good_photo">
+								<img class="goods_img" src="img/product_pic@2x.png" srcset="img/product_pic@2x.png 2x, img/product_pic@3x.png 3x" alt="">
+							</div>
+							<div class="good_info">
+								<div class="row1">
+									<div class="good_name">Apple iPhone 7</div>
+									<div class="row2_text">￥5688</div>
+								</div>
+								<div class="row2">
+									<div class="good_classify">红色 32G 移动版 套餐一</div>
+								</div>
+								<div class="product_num">×1</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--备注弹出框-->
+		<div id="remarks_back" class="remark_back_div">
+			<div class="remark_div">
+				<div class="remark_font">备注</div>
+				<div style="text-align: center;">
+					<input class="remark_serial_num" placeholder="产品序列号"/>
+					<input class="remark_des" placeholder="说明"/>
+				</div>
+				<div class="remark_opt_container">
+					<div class="remark_cencle_span">取消</div>
+					<div class="remark_sure_span">确定</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common_js/change_fontsize.js"></script>
+	<script type="text/javascript" src="js/common_js/my_tools.js"></script>
+	<script type="text/javascript">
+		(function($, document) {
+			//搜索框（获得焦点）
+			$('.search_input').bind('focus', function() {
+				$('.input_info').hide();
+			});
+			//搜索框（失去焦点）
+			$('.search_input').bind('focusout', function() {
+				if($('.search_input').val() == "") {
+					$('.input_info').show();
+				}
+			});
+			//点击小笔，弹出编辑框
+			$(".inquiry_header_div2").on('click', function() {
+				$('#remarks_back').show();
+			});
+			//点击弹出框中的确定
+			$(".remark_sure_span").on('click', function() {
+				$('#remarks_back').hide();
+			});
+		})(jQuery, document);
+	</script>
+
+</html>

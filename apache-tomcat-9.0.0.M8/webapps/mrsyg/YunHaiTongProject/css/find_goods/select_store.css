@@ -1,0 +1,109 @@
+html,body{
+	background-color: #efefef;
+}
+.select-store-content{
+	padding: 0 0 3.8rem;
+}
+.select-store-content .store-list-item:not(:first-child){
+	margin-top: 0.8rem;
+}
+.store-list-item{
+	padding: 1.4rem 1.5rem 1.4rem 1.2rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color: #fff;
+}
+.store-name-view,.store-name-score{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.store-name-view .store-name{
+	color: #333;
+	font-size: 1.7rem;
+}
+
+.store-address{
+	color: #777;
+	font-size: 1.3rem;
+	margin-top: 0.3rem;
+}
+.store-info-item  .icon-location{
+	background-color: #ffc029;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
+    color: #fff;
+    padding: 0 0.25rem 0.1rem;
+}
+.store-address{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.store-detail-address{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.save-store-btn{
+	bottom: 0;
+	left: 0;
+	position: fixed;
+}
+.save-store-btn .btn{
+	padding: 1rem 1.2rem;
+	border-radius: 0;
+	background-color: #4395f7;
+	border-color: #4395f7;
+	color: #fff;
+	font-size: 1.5rem;
+    padding: 1.2rem;
+}
+.save-store-btn .btn:active{
+	background-color: rgba(67,149,247,0.8);
+	border-color: #4395f7;
+	color: #fff;
+}
+.icon-quan{
+	font-size: 2rem;
+	color: #777;
+}
+.icon-xuanzedui{
+	font-size: 2rem;
+	color: #4395f7;
+}
+.store-list-item:active{
+	background-color: #fafafa;
+}
+.store-score{
+	margin-left: 0.5rem;
+}
+.store-score .iconfont{
+	font-size: 1.3rem;
+	color: #DCDCDC;
+}
+.store-score .score{
+	color: #FF5959;
+}
+.store-score-text{
+	color: #FF5959;
+	font-size: 1.5rem;
+}
+.store-distance{
+	color: #777;
+	font-size: 1.2rem;
+}
+.store-other-info span{
+	border: 0.1rem solid #ddd;
+    color: #999;
+    font-size: 1.1rem;
+    margin: 0.5rem 0.4rem 0.4rem 0.1rem;
+    padding: 0.2rem 0.5rem;
+    width: auto;
+}

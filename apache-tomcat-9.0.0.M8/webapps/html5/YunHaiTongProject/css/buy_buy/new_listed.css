@@ -1,0 +1,42 @@
+html,body{
+	background-color: #efefef;
+}
+.new-listed-container img{
+	width: 100%;
+	height: auto;
+}
+.buy-buy-nav-bar{
+	padding: 1.5rem 0;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+    align-items: flex-end; 
+    position: fixed;
+    left:0;
+    top: 0;
+    z-index: 1030;
+}
+.buy-buy-nav-bar span{
+	font-size: 1.4rem;
+	color: #999;
+}
+.buy-buy-nav-bar .active{
+	font-size: 1.6rem;
+	color: #333;
+}
+.new-listed-content{
+	margin-top: 5.3rem;
+}
+.new-listed-item{
+	background-color: #fff;
+	margin-bottom: 1rem;
+}
+.new-listed-goods-info{
+	padding: 1.5rem 0;
+	font-size: 1.6rem;
+	color: #333;
+}
+.new-listed-item:active{
+	background-color:#fafafa ;
+}

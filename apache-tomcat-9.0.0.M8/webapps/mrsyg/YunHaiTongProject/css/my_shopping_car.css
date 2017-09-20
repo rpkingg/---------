@@ -1,0 +1,291 @@
+.shopping_car_top_bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+}
+
+.shopping_car_order_conner {
+	padding-top: 1.2rem;
+	padding-bottom: 1.5rem;
+	overflow-x: hidden;
+}
+
+.shop_name_conter {
+	height: 0.56rem;
+	padding: 0.32rem 0.37333333rem 0.32rem 0.26666667rem;
+	position: relative;
+}
+
+.shop_selected {
+	width: 0.56rem;
+	height: 0.56rem;
+	position: absolute;
+}
+
+.shop_name {
+	font-size: 0.34666667rem;
+	position: absolute;
+	left: 1.06666667rem;
+}
+
+.order_trash {
+	width: 0.50666667rem;
+	height: 0.48rem;
+	position: absolute;
+	left: 9.2rem;
+	top: 1.5rem;
+}
+
+.good_box {
+	padding: 0.4rem 0.26666667rem;
+	position: relative;
+	height: 1.76rem;
+}
+
+.good_selected {
+	width: 0.56rem;
+	height: 0.56rem;
+	position: absolute;
+	top: 0.8rem;
+}
+
+.product_piture {
+	width: 1.76rem;
+	height: 1.76rem;
+	position: absolute;
+	left: 1.12rem;
+}
+
+.row_one {
+	font-size: 0.45333333rem;
+	color: #333333;
+	left: 3rem;
+	position: relative;
+}
+
+.good_price {
+	color: #FF5959;
+	font-size: 0.32rem;
+	position: absolute;
+	left: 3.27rem;
+	top: 1.5rem;
+	display: inline-block;
+}
+
+.edit-count {
+	font-size: 0.34666667rem;
+	position: absolute;
+	left: 6rem;
+	top: 1.4rem;
+}
+
+.less {
+	background-color: #F5F5F5;
+	width: 0.85333333rem;
+	height: 0.77333333rem;
+	display: inline-block;
+	text-align: center;
+	line-height: 0.77333333rem;
+	font-size: 0.34666667rem;
+}
+
+.count {
+	background-color: #F5F5F5;
+	width: 0.77333333rem;
+	height: 0.77333333rem;
+	display: inline-block;
+	text-align: center;
+	line-height: 0.77333333rem;
+	margin-left: -3px;
+}
+
+.plus {
+	background-color: #F5F5F5;
+	width: 0.85333333rem;
+	height: 0.77333333rem;
+	display: inline-block;
+	text-align: center;
+	line-height: 0.77333333rem;
+	margin-left: -3px;
+}
+
+.shopping_car_footer {
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	bottom: 0;
+	height: 1.30666667rem;
+	background-color: #FFFFFF;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+}
+
+.selected_all {
+	width: 0.56rem;
+	height: 0.56rem;
+	position: absolute;
+	top: 0.37333333rem;
+	left: 0.26666667rem;
+}
+
+.need_pay {
+	color: #777777;
+	font-size: 0.37333333rem;
+	display: inline-block;
+	position: absolute;
+	left: 2.56rem;
+	top: 0.4rem;
+}
+
+.btn-commit {
+	position: relative;
+	color: #FFFFFF;
+	float: right;
+	background-color: #FF5959;
+	font-size: 0.42666667rem;
+	height: 1.30666667rem;
+	line-height: 1.30666667rem;
+	width: 4.29333333rem;
+	text-align: center;
+}
+.selected_all_content{
+	color: #777777;font-size: 0.37333333rem;position: absolute;top: 0.42rem;left: 1rem;
+}
+
+/*Ö§¸¶µ¯´°*/
+.notice-pay{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index: 9999;
+    display: none;
+}
+.notice-pay .shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1;
+}
+.chose-pay{
+    width:100%;
+    height:1.33rem;
+    line-height:1.33rem;
+    position: relative;
+    z-index: 9999;
+    background: #FFFFFF;
+    border-bottom:1px solid #e5e5e5;
+    text-align: center;
+}
+
+.chose-pay>img{
+    width: 0.37rem;
+    height: 0.37rem;
+    position: absolute;
+    top: 0.48rem;
+    left: 4.8%;
+}
+
+.chose-pay>span{
+    font-size:0.37333333rem;
+    color: #333333;
+    display: block;
+}
+.chose-pay-text{
+    float: left;
+    margin-left: 3.70666667rem;
+    font-size: 0.37333333rem;
+}
+.chose-pay-div{
+    float: right;
+    position: absolute;
+    right: 0.5rem;
+    top: -0.1rem;
+}
+.chose-pay-img{
+    height: 0.42666667rem;
+    width: 0.42666667rem;
+}
+.pay-content{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+.pay-wechat{
+    width:100%;
+    height:1.4rem;
+    line-height:1.4rem;
+    font-size:0.4rem;
+    /*border-top:1px solid #e5e5e5;*/
+    border-bottom:1px solid #e5e5e5;
+    background:#ffffff;
+    color: #333333;
+    position: relative;
+}
+.pay-center{
+    text-align: center !important;
+}
+.pay-money{
+    font-size: 0.34666667rem;
+    color: #777777;
+}
+.pay-wechat-span{
+    font-size: 0.37333333rem;
+    color:#ff5959;
+}
+.brand{
+    width:0.8rem;
+    height:0.8rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3.5% 0 4.5%;
+}
+.chose{
+    position: absolute;
+    top: 0.45rem;
+    right: 0.21rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    display: none;
+}
+.chose-pay-yes{
+    display: block;
+    float: right;
+    margin-right: 0.32rem;
+}
+.chose-pay-no{
+    display: block;
+    float: right;
+    position: absolute;
+    top: 0.45rem;
+    right: 0.53rem;
+    width: 0.55rem;
+    height: 0.55rem;
+}
+.blank{
+    width:100%;
+    height:1rem;
+    background: #FFFFFF;
+    z-index: 9999;
+}
+.sure-pay {
+    width: 100%;
+    height: 1.49333333rem;
+    line-height: 1.49333333rem;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.4rem;
+    position: relative;
+    z-index: 9999;
+    background-color: #4395F7;
+}

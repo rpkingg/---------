@@ -1,0 +1,42 @@
+.left_liked_container{
+	width: 50%;float: left;background-color: #FFFFFF;padding-top: 0.2rem;
+}
+.right_liked_container{
+	width: 50%;float: left;background-color: #FFFFFF;padding-top: 0.2rem;
+}
+.left_liked{
+	width: 4.58rem;margin-left: 0.25rem;margin-top: 0.2rem;border: 1px solid #DDDDDD;margin-bottom: 0.2rem;
+}
+.liked_pic{
+	width: 4.58rem;
+}
+.liked_container{
+	padding: 0.25rem;font-size: 0.32rem;
+}
+.zan_time_container{
+	font-size: 0.32rem;margin-top: 0.48rem;
+}
+.time_pic{
+	width: 0.35rem;height: 0.35rem;vertical-align: text-bottom;
+}
+.zan_time{
+	color: #9B9B9B;display: inline-block;
+}
+.right_liked{
+	width: 4.58rem;margin-left: 0.15rem;margin-top: 0.2rem;border: 1px solid #DDDDDD;margin-bottom: 0.2rem;
+}
+.note_des{
+	color: #9B9B9B;padding-top: 0.2rem;
+}
+.have_zan{
+	display: none;
+}
+.no_zan{
+	text-align: center;display: none;
+}
+.no_zan_pic{
+	width: 2.54rem;height: 2.54rem;padding-top: 5.76rem;
+}
+.no_zan_content{
+	color: #777777;font-size: 0.46rem;padding-top: 0.5rem;
+}

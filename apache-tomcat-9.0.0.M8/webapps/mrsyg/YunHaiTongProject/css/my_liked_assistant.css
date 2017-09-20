@@ -1,0 +1,39 @@
+.liked_item_box {
+	padding: 0.61333333rem 0.4rem;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EFEFEF;
+	position: relative;
+}
+
+.liked_item_box_p {
+	font-size: 0.4rem;
+	width: 6.0266667rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.liked_item_box_img {
+	display: inline-block;
+	width: 0.42666667rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0.72rem;
+	left: 8.1rem;
+	background: url(../img/zan_btn@2x.png) no-repeat;
+	background-size: 0.42666667rem 0.4rem;
+}
+
+.liked {
+	background: url(../img/ic_comment_like_sel@2x.png) no-repeat;
+	background-size: 0.42666667rem 0.4rem;
+}
+
+.liked_item_box_span {
+	font-size: 0.26666667rem;
+	color: #9b9b9b;
+	float: left;
+	top: -0.5rem;
+	left: 8.3rem;
+	position: relative;
+}

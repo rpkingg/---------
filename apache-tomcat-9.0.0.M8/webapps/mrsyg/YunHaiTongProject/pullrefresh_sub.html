@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="GBK">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/common_css/mui.min.css">
+	</head>
+
+	<body>
+		<div>
+			lalalalalala
+		</div>
+		<!--下拉刷新容器-->
+		<div id="pullupRefreshFirst" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view mui-table-view-chevron" id="mui-test">
+					<li ></li >
+				</ul>
+			</div>
+		</div>
+
+		<!--<div id="pullupRefreshSecond" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view mui-table-view-chevron" >
+					<li ></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="pullupRefreshThird" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				&lt;!&ndash;数据列表&ndash;&gt;
+				<ul class="mui-table-view mui-table-view-chevron" >
+					<li ></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="pullupRefreshFour" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				&lt;!&ndash;数据列表&ndash;&gt;
+				<ul class="mui-table-view mui-table-view-chevron" >
+					<li ></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="pullupRefreshFive" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				&lt;!&ndash;数据列表&ndash;&gt;
+				<ul class="mui-table-view mui-table-view-chevron" >
+					<li ></li>
+				</ul>
+			</div>
+		</div>-->
+
+		<script src="js/common_js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common_js/jquery-2.1.4.min.js"></script>
+		<script type= "text/javascript">
+			mui.init({
+				pullRefresh: {
+					container: '#pullupRefreshFirst',
+					down: {
+						callback: pullupRefreshFirst
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pulldownRefreshFirst
+					}
+				}
+			});
+			/*
+			 * 下拉刷新具体业务实现
+			 */
+			function pullupRefreshFirst() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for(var i = cells.length, len = i + 3; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML = '<a class="mui-navigate-right ">Item ' + (i + 1) + '</a>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#pullupRefreshFirst').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pulldownRefreshFirst() {
+				setTimeout(function() {
+					mui('#pullupRefreshFirst').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for(var i = cells.length, len = i + 20; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML = '<a class="mui-navigate-right ">Item ' + (i + 1) + '</a>';
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+			if(mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#pullupRefreshFirst').pullRefresh().pullupLoading();
+					}, 1000);
+	
+				});
+			} else {
+				mui.ready(function() {
+					mui('#pullupRefreshFirst').pullRefresh().pullupLoading();
+				});
+			}
+			document.getElementById("mui-test").addEventListener('tap',function () {
+				alert("ga")
+			})
+	</script>
+	</body>
+
+</html>

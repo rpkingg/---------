@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>输入提示后查询</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=30b434d6f0515dc391afb7932bd29183&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.js"></script>
+	
+</head>
+<body>
+<div id="container"></div>
+<div id="myPageTop">
+    <table>
+        <tr>
+            <td>
+                <label>请输入关键字：</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="tipinput" />
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript">
+function queryposition(){
+    var address = $("#tipinput").val();
+	if(address!=""){
+	AMap.service('AMap.Geocoder',function(){//回调函数
+    //实例化Geocoder
+    geocoder = new AMap.Geocoder({
+      //  city: "010"//城市，默认：“全国”
+    });
+	//地理编码
+
+   geocoder.getLocation(address, function(status, result) {
+    if (status === 'complete' && result.info === 'OK') {
+	    var citycode = result.geocodes[0].addressComponent.citycode;
+		
+		if(citycode!="021"){
+		  alert("配送地址不存在,请选择其他");
+		}else{
+		 // var latitude = result.geocodes[0].location.lat;
+		 // var longitude = result.geocodes[0].location.lng;
+		//  alert("经纬度"+latitude+","+longitude);
+		 // var lnglatXY=[longitude,latitude];//地图上所标点的坐标
+         // geocoder.getAddress(lnglatXY, function(status, result) {
+    //if (status === 'complete' && result.info === 'OK') {
+       //获得了有效的地址信息:
+       //即，result.regeocode.formattedAddress
+    //}else{
+       //获取地址失败
+  //  }
+         //});  
+		  
+		}
+	    
+        //TODO:获得了有效经纬度，可以做一些展示工作
+        //比如在获得的经纬度上打上一个Marker
+    }else{
+        //获取经纬度失败
+    }
+	
+}); 
+    //TODO: 使用geocoder 对象完成相关功能
+})
+}
+}
+
+    //输入提示
+    var autoOptions = {
+        input: "tipinput"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+
+</script>
+</body>
+</html>

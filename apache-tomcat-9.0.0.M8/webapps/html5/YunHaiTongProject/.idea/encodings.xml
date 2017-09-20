@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/addOrEdit_address.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/buy_buy.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/cloud_currency.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/collect_notes_goods_shop.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exchange_coupons_detail.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/goods_detail.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/buy_buy/new_listed.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/common_js/my_tools.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/find_goods/goods_detail.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_shopping_car.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/cloud_currency.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/collect_notes.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/my_user_side/exchange_coupons_detail.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/stroll_find_goods.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/my_order.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/select_delivery_address.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stroll_find_goods.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/页面名称.txt" charset="GBK" />
+  </component>
+</project>

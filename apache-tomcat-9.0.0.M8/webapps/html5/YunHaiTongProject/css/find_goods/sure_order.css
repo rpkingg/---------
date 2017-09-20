@@ -1,0 +1,306 @@
+html,body{
+	background-color: #efefef;
+}
+.has-default-address{
+	padding:0 1.2rem;
+}
+.get-goods-address{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color: #48627C;
+	padding: 1.5rem 0;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	font-size: 1.5rem;
+}
+.pay-mode-container{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-top: 0.8rem;
+	background-color: #fff;
+	padding: 1.5rem 0 1.5rem 1.2rem;
+	font-size: 1.4rem;
+}
+.pay-mode-tip{
+	color: #333;
+	font-size: 1.5rem;
+}
+.pay-mode-text,.pay-mode-select-icon,
+.distribution-mode-text{
+	color: #777;
+	font-size: 1.4rem;
+}
+.goods-order-detail {
+	margin-top: 0.8rem;
+	background-color: #fff;
+}
+
+.goods-order-detail{
+	padding:0 0 0 1.2rem;
+}
+
+.goods-store-info,.distribution-mode-info{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:flex-start;
+	align-items:center;
+	border-bottom: 0.1rem solid #ddd;
+	font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.distribution-store-base .selected-store{
+	color: #333;
+	font-size: 1.5rem;
+}
+.goods-store-info .store-tip-text{
+	color: #777;
+	font-size: 1.3rem;
+}
+
+.goods-selected-info{
+	border-bottom: 0.1rem solid #ddd;
+	padding: 1.5rem 1.6rem 1.5rem 0;
+}
+.goods-selected-info .goods-pic{
+	border:0.1rem solid #ddd;
+	padding: 0.2rem 0.5rem;
+	width: 18%;
+}
+.goods-selected-info .goods-pic img{
+	border-radius: 0.4rem;
+}
+.goods-base-info .goods-name{
+	font-size: 1.7rem;
+	color: #333;
+}
+.goods-price-num .goods-price{
+	font-size: 1.5rem;
+	color: #333;
+}
+.goods-base-info .goods-attr,
+.goods-price-num .buy-num{
+	font-size: 1.3rem;
+	color: #777;
+	margin-top: 1rem;
+}
+.goods-base-info .goods-attr{
+	font-size: 1.4rem;
+}
+.goods-price-num .buy-num{
+	margin-top: 1.2rem;
+}
+.goods-base-info {
+	padding-left: 0.8rem;
+	width: 62%;
+}
+.buy-other-info{
+	padding:0.5rem 1.6rem 0.5rem 0;
+	border-bottom: 0.1rem solid #ddd;
+}
+.total-price,.goods-carriage{
+	font-size: 1.3rem;
+	padding:0.4rem 0;
+	color: #777;
+}
+.goods-voucher,.pay-price{
+	background-color: #fff;
+	padding:1.2rem 0.5rem 1.2rem 1.2rem;
+	font-size: 1.3rem;
+	color: #777;
+}
+.pay-price {
+	padding:1.2rem 1.6rem 1.2rem 1.2rem;
+}
+.goods-voucher,.pay-price{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:flex-start;
+	align-items:center;
+	flex-direction: row;
+}
+.goods-voucher{
+	border-bottom: 0.1rem solid #ddd;
+}
+.goods-voucher .icon-jiantou-copy{
+	width: 5%;
+}
+.voucher-sum{
+	margin-right: 0.4rem;
+    width: 20%;
+}
+.voucher-sum,.pay-price span:not(:first-child){
+	color: #ff5959;
+}
+.pay-price span:first-child{
+	color: #333;
+	font-size: 1.5rem;
+}
+.pay-price span:not(:first-child){
+	font-size: 1.4rem;
+}
+
+.pay-opt-nar{
+	display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 1030;
+    border-top: 0.1rem solid #ddd;
+	background-color: #fff;
+}
+
+.pay-now,.pay-amount-text{
+	min-height: 5rem;
+	padding: 1.4rem;
+}
+.pay-now{
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: #4395F7;
+	border-top:0.1rem solid #4395F7;
+}
+.pay-amount-text span:first-child{
+	color: #777;
+	font-size: 1.5rem;
+}
+.pay-amount-text span:not(:first-child){
+	color: #333;
+	font-size: 1.6rem;
+}
+.pay-amount span{
+	color: #333;
+	font-size: 1.5rem;
+}
+.goods-voucher:active,.distribution-store:active{
+	background-color: #fafafa;
+}
+
+.select-pay-tool-container{
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1031;
+	background-color: #fff;
+	width: 100%;
+}
+.select-pay-tool-container img{
+	width: 100%;
+	height: auto;
+}
+.pay-tool-info .pay-title{
+	display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+	padding:1.2rem;
+	font-size: 1.5rem;
+	border-bottom: 0.1rem solid #ddd;
+}
+.pay-title .icon-guanbi{
+	color: #999;
+}
+.pay-select-info{
+	padding: 0 1.2rem;
+}
+.pay-select-info .pay-amount{
+	padding:1.2rem;
+	font-size: 1.4rem;
+	border-bottom: 0.1rem solid #ddd;
+	color: #777;
+}
+.pay-tool-items{
+	padding:0.8rem 0;
+}
+
+.pay-tool-item {
+	display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pay-tool-item .icon-alipay,
+.pay-tool-item .icon-wechatpay-scan{
+	font-size: 3rem;
+}
+.pay-tool-item .icon-alipay{
+	color: #3498DB;
+}
+.pay-tool-item .icon-wechatpay-scan{
+	color: #2ecc71;
+}
+.pay-tool-item .pay-tool-name{
+	font-size: 1.6rem;
+	padding-left: 1rem;
+}
+.pay-tool-items .pay-tool-item:nth-child(even){
+	margin-top: 0.5rem;
+}
+.sure-pay{
+	min-height: 4.5rem;
+	padding: 1.3rem;
+	font-size:1.7rem;
+	color: #fff;
+	background-color: #4395F7;
+	border-top:0.1rem solid #4395F7;
+}
+.distribution-store-info{
+	margin-top: 0.8rem;
+	background-color: #fff;
+	font-size: 1.4rem;
+}
+.distribution-store{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:flex-start;
+	align-items:center;
+	border-bottom: 0.1rem solid #ddd;
+	padding: 1.5rem 0 1.5rem 1.2rem;
+}
+.distribution-store-tip {
+	font-size: 1.5rem;
+	color: #333;
+}
+.distribution-store-base{
+	padding:1rem 1.2rem;
+}
+.store-score{
+	margin-left: 1.5rem;
+}
+.store-score .iconfont{
+	font-size: 1.4rem;
+	color: #DCDCDC;
+}
+.store-score .score{
+	color: #FF5959;
+}
+.store-score-text{
+	color: #FF5959;
+	font-size: 1.5rem;
+}
+.distribution-store-address{
+	color: #999;
+	font-size: 1.3rem;
+	margin-top: 0.3rem;
+}
+.distribution-store-address .icon-didian{
+	font-size: 1.6rem;
+}
+.mui-poppicker{
+	z-index: 1031;
+}
+.sure-order-container{
+	padding-bottom: 5.3rem;
+}
